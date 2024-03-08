@@ -1,17 +1,58 @@
-*{
+* {
+    margin: 0;
+}
+
+body {
     background-color: #E1DFE1;
 }
-/** FONT FAMILY **/
 
-    
+/* nav bar*/
+nav {
+    color: white;
+    background-image: url(images/background-nav.png);
+    background-size: 135%;
+    width: 100%;
+    background-color: transparent;
+    font-family: jura;
+}
 
-footer{
+h1 {
+    font-size: 1em;
+    padding: 0.75em;
+}
+
+.image-logo {
+    width: 5rem;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+li {
+    margin: 0.5em;
+}
+
+li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/*footer*/
+u footer {
+
     height: 200px;
     background-color: rgb(145, 142, 142);
 
-}
-.logofooter{
-    width: 30%;
 }
 /** CAROUSEL**/
 
@@ -100,3 +141,17 @@ footer{
 }
 
   /** FIN bouton commentaire **/
+
+
+.logofooter {
+    width: 3%;
+}
+
+.lunefooter {
+    width: 20%;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+}
