@@ -1,11 +1,246 @@
-*{
-    background-color: #E1DFE1;
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
-footer{
-    height: 200px;
-    background-color: rgb(145, 142, 142);
+
+body {
+  background-color: #E1DFE1;
+}
+
+/* nav bar*/
+nav {
+  color: white;
+  background-image: url(images/background-nav.png);
+  background-size: 135%;
+  width: 100%;
+  background-color: transparent;
+  font-family: jura;
+}
+
+h1 {
+  font-size: 1em;
+  padding: 0.75em;
+}
+
+.image-logo {
+  width: 5rem;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
 
 }
-.logofooter{
-    width: 30%;
+
+li {
+  margin: 0.5em;
+}
+
+li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+/*cards*/
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 3rem 1rem;
+  border-radius: 1.5rem;
+  height: 100%;
+  font-family: jura;
+  background-color: #988469;
+  border: 0.15rem solid black;
+  box-shadow: 0.15rem 0.15 rem black;
+  padding: 1rem 0.5rem;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+
+}
+
+.name-restaurant {
+  margin-bottom: 0.4em;
+  margin-top: 0.4em;
+  font-size: 1.3em;
+}
+
+.dropdown-content {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.restaurant-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.restaurant-description {
+  font-family: Kaisei HarunoUmi;
+
+}
+
+.restaurant-quote {
+  margin-top: 0.4em;
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5em;
+}
+
+.dropdown-button {
+  font-family: Kaisei HarunoUmi;
+  color: #999185;
+  border-style: none;
+  border-radius: 0.75rem;
+  padding: 0.5rem 1rem;
+  background-color: #E1DFE1;
+
+}
+
+.dropdown-button:hover {
+  background-color: black;
+  color: #ccc;
+}
+
+/*fin cards /
+/*footer*/
+u footer {
+
+  height: 200px;
+  background-color: rgb(145, 142, 142);
+
+}
+
+/** CAROUSEL**/
+
+.slider-container {
+  /**max-width: 800px;**/
+  position: relative;
+  margin: auto;
+  height: 350px;
+  overflow: hidden;
+}
+
+.menu {
+  position: absolute;
+  left: 0;
+  z-index: 11;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+.menu label {
+  cursor: pointer;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50px;
+  margin: 0 0.2em 1em;
+}
+
+.menu label:hover,
+.menu label:focus {
+  background: #1c87c9;
+}
+
+.slide-input {
+  opacity: 0;
+}
+
+.slide-img {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  transition: left 0s 0.75s;
+}
+
+[id^="slide"]:checked+.slide-img {
+  left: 0;
+  z-index: 100;
+  transition: left 0.65s ease-out;
+}
+
+/** FIN CAROUSEL **/
+
+
+/** bouton commentaire **/
+
+.btn {
+  font-family: "Jura", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  font-weight: bolder;
+  color: #fff;
+  background-color: #999150;
+  padding: 10px 30px;
+  border: none;
+  box-shadow: rgb(0, 0, 0) 4px 1px 22px 1px;
+  border-radius: 50px;
+  transition: 1195ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transition: 1195ms;
+  padding: 20px 50px;
+  transform: translateY(-0px);
+  background-color: #999150;
+  color: #ffffff;
+  border: none;
+}
+
+.btn-cmnt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/** FIN bouton commentaire **/
+
+
+.logofooter {
+  width: 3%;
+}
+
+.lunefooter {
+  width: 20%;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
 }

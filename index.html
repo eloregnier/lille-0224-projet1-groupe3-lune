@@ -1,29 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
     <title>Office de tourisme de la Lune | WCS</title>
+
+
+
 </head>
+
 <body>
     <header>
         <nav>
-            <img src="/lille-0224-projet1-groupe3-lune/images/logo.png" alt="Logo de l'office de tourisme de la lune">
+            <div class="nav-header"><img class="image-logo" src="images/logo.png"
+                    alt="Logo de l'office de tourisme de la lune">
+                <section>
+                    <ul>
+                        <li><a href="">Manger</a></li>
+                        <li><a href="">Dormir</a></li>
+                        <li><a href="">Activités</a></li>
+                    </ul>
+                </section>
+            </div>
             <h1>Site officiel de tourisme de la Lune</h1>
-            <section>
-                <ul>
-                    <li>Où manger</li>
-                    <li>Où dormir</li>
-                    <li>Les activités</li>
-                </ul>
-            </section>
         </nav>
     </header>
     <main>
-        <div>
-            <!--CAROUSSEL-->
+        <!---------------------CAROUSSEL-------------------->
+        <div class="slider-container">
+            <div class="menu">
+                <label for="slide-dot-1"></label>
+                <label for="slide-dot-11"></label>
+                <label for="slide-dot-2"></label>
+                <label for="slide-dot-3"></label>
+                <label for="slide-dot-4"></label>
+                <label for="slide-dot-5"></label>
+            </div>
+
+            <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
+            <img class="slide-img" src="images/slide1.png">
+            <input class="slide-input" id="slide-dot-11" type="radio" name="slides">
+            <img class="slide-img" src="images/slide11.png">
+
+            <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
+            <img class="slide-img" src="images/slide2.png">
+
+            <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
+            <img class="slide-img" src="images/slide3.png">
+
+            <input class="slide-input" id="slide-dot-4" type="radio" name="slides">
+            <img class="slide-img" src="images/slide4.png">
+
+            <input class="slide-input" id="slide-dot-5" type="radio" name="slides">
+            <img class="slide-img" src="images/slide5.png">
         </div>
+
+        <!---------------------CARDS----------------------------->
+        <div class="card-container">
+            <div class="image-container">
+                <img src="images/restaurant1.jpg" class="card-img" />
+            </div>
+            <section class="restaurant-section">
+                <h3 class="name-restaurant">Nom Restaurant 1</h3>
+                <div class="dropdown-content">
+                    <article class="restaurant-description">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, nihil? Libero vel ut
+                            aliquid
+                            ducimus rerum culpa a sit quasi, corrupti commodi earum, dolor iusto ipsam. Consequuntur
+                            facilis
+                            adipisci rem? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat et natus
+                            ipsum
+                            recusandae autem ea harum, quis facilis non atque culpa expedita provident similique.
+                            Perspiciatis
+                            dicta magnam vel velit delectus?
+                        </p>
+                    </article>
+                    <blockquote class="restaurant-quote">
+                        "Citation du restaurant"
+                    </blockquote>
+                </div>
+            </section>
+            <div class="button-container">
+                <button class="dropdown-button">V
+                </button>
+            </div>
+        </div>
+        <!----------------- FIN CARDS---------------------------------->
         <section>
             <h2></h2>
             <article>
@@ -105,44 +172,35 @@
                     laboriosam iste inventore, velit et!</p>
             </article>
         </section>
-        <section>
-            <button>CECI EST LE BOUTON DE COMMENTAIRE</button>
+        <section class="btn-cmnt">
+            <button class="btn">CECI EST LE BOUTON DE COMMENTAIRE</button>
         </section>
     </main>
     <footer>
-        <section>
-        <img src="/lille-0224-projet1-groupe3-lune/images/logo.png" alt="Logo de l'office de tourisme de la lune">
-        <p>Adress: 01 rue de lille , 59000   LUNE</p>
-        <p>Telephone 090909090909</p>
-        <p>Mail lune@outlook.com</p>
-        <p>Nous suivre </p>
-        
-        <a  href="https://www.facebook.com/"><img class="logofooter" src="/lille-0224-projet1-groupe3-lune/images/facebooklogo.png"></a> 
-        <a  href="https://www.instagram.com/"><img class="logofooter" src="/lille-0224-projet1-groupe3-lune/images/insta.png" </a>
-    </section>
-    <section>
-        <h3>Fait par</h3>
-        <ul>
-            <li>Morgan POUILLY</li>
-            <li>Elodie REGNIER</li>
-            <li>Houari BENKADA</li>
-            <li>Audrey BAUDRY</li>
-            <li>Arnauld MONTANDON</li>
-        </ul>
-    </section>
+        <img class="lunefooter" src="images/logo.png" alt="Logo de l'office de tourisme de la lune">
+        <section class="contact">
+            <p>Adress: 01 rue de lille , 59000 LUNE</p>
+            <p>Telephone 090909090909</p>
+            <p>Mail lune@outlook.com</p>
+            <p>Suivez-nous</p>
+            <a href="https://www.facebook.com/"><img class="logofooter" src="images/facebooklogo.png"></a>
+            <a href="https://www.instagram.com/"><img class="logofooter" src="images/insta.png"></a>
+        </section>
+
+        <section class="developpeurs">
+
+            <h3>Fait par</h3>
+            <ul>
+                <li>Morgan POUILLY</li>
+                <li>Elodie REGNIER</li>
+                <li>Houari BENKADA</li>
+                <li>Audrey BAUDRY</li>
+                <li>Arnauld MONTANDON</li>
+            </ul>
+        </section>
 
     </footer>
 </body>
+<script src="script.js"></script>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
