@@ -1,13 +1,214 @@
 * {
-    margin: 0;
-  }
-  body {
-    background-color: #E1DFE1;
-  }
-  /* nav bar*/
-  nav {
-    color: white;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E1DFE1;
+}
+
+/* nav bar
     background-image: url(images/background-nav.png);
+    background-size: 150%;
+    voir si on ajoute une image en bg*/
+
+nav {
+  color: white;
+  width: 100%;
+  background-color: black;
+  font-family: jura;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1em;
+}
+
+#image-logo {
+  width: 5rem;
+  padding-top: 1em;
+}
+
+ul {
+  padding-inline-start: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+
+.nav-bar-li {
+  margin: 0.5em;
+}
+
+li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sticky {
+  position: fixed;
+  z-index: 1000;
+  background-color: black;
+  top: 0;
+  width: 100%
+}
+
+.navBarFixed {
+  display: flex;
+}
+
+/* FIN NAV BAR */
+
+
+#suivant,
+#precedent {
+  position: absolute;
+  top: 150px;
+  opacity: 1;
+}
+
+.image-container {
+  /**position: relative;**/
+}
+
+.card-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.name-restaurant {
+  margin-bottom: 0.4em;
+  margin-top: 0.4em;
+  font-size: 1.3em;
+}
+
+.restaurant-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.restaurant-description {
+  font-family: Kaisei HarunoUmi;
+}
+
+.restaurant-quote {
+  margin-top: 0.4em;
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+.card-button {
+  font-family: Kaisei HarunoUmi;
+  color: #90862B;
+  border-style: none;
+  border-radius: 0.75rem;
+}
+
+/*footer*/
+u footer {
+  height: 200px;
+  background-color: rgb(145, 142, 142);
+}
+
+/** CAROUSEL**/
+.slider-container {
+  /**max-width: 800px;**/
+  position: relative;
+  margin: auto;
+  height: 350px;
+  overflow: hidden;
+}
+
+.menu {
+  position: absolute;
+  left: 0;
+  z-index: 11;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+.menu label {
+  cursor: pointer;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50px;
+  margin: 0 0.2em 1em;
+}
+
+.menu label:hover,
+.menu label:focus {
+  background: #1C87C9;
+}
+
+.slide-input {
+  opacity: 0;
+}
+
+.slide-img {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  transition: left 0s 0.75s;
+}
+
+[id^="slide"]:checked+.slide-img {
+  left: 0;
+  z-index: 100;
+  transition: left 0.65s ease-out;
+}
+
+/** FIN CAROUSEL **/
+/** bouton commentaire **/
+.btn {
+  font-family: "Jura", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  font-weight: bolder;
+  color: #fff;
+  background-color: #999150;
+  padding: 10px 30px;
+  border: none;
+  box-shadow: rgb(0, 0, 0) 4px 1px 22px 1px;
+  border-radius: 50px;
+  transition: 1195ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transition: 1195ms;
+  padding: 20px 50px;
+  transform: translateY(-0px);
+  background-color: #999150;
+  color: #FFFFFF;
+  border: none;
+}
+
+.btn-cmnt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/** FIN bouton commentaire **/
+
     background-size: 135%;
     width: 100%;
     background-color: transparent;
@@ -236,23 +437,21 @@
   /** DEBUT du Footer **/
 
 .logofooter {
-    width: 2em;
-    margin-left: 0.3em;
+  width: 2em;
+  margin-left: 0.3em;
 }
 
 .lunefooter {
-  margin-top: 1.5em;
-    width: 7em;
-    height: 7em;
+  width: 20%;
 }
 
 footer {
-   background-color: rgb(174, 165, 165);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 10em;
-    color: rgb(231, 222, 222);
+  background-color: rgb(174, 165, 165);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 10em;
+  color: rgb(231, 222, 222);
 }
 
 .contact {
@@ -266,7 +465,7 @@ footer {
 
 .developpeurs {
   font-size: 10px;
-  margin-right:2em ;
+  margin-right: 2em;
   flex-direction: column;
 }
 
@@ -279,4 +478,3 @@ footer {
   flex-direction: column;
   text-align: left;
 }
-
