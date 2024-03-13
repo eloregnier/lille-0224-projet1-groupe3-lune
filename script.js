@@ -1,3 +1,4 @@
+
 // nav bar fixed
 const navBarFixed = document.getElementById('navBarFixed');
 const body = document.body;
@@ -17,6 +18,15 @@ function myFunction() {
 	}
 }
 // fin nav bar fixed
+
+
+const dropdownBtn = document.querySelector(".dropdown-button");
+const dropdownMenu = document.querySelector(".dropdown-menu-content");
+dropdownBtn.addEventListener("click", function () {
+    dropdownMenu.classList.toggle("visible");
+})
+
+
 const slides = [
 	{
 		"image": "slide1.png",
@@ -35,4 +45,6 @@ const slides = [
 		"tagLine": "Autocollants <span>avec découpe laser sur mesure</span>"
 	}
 ]
-const flecheSuivant = document.querySelectorAll('#suivant')
+
+const flecheSuivant=document.querySelectorAll('#suivant')
+
