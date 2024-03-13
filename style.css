@@ -1,115 +1,160 @@
 * {
-  margin: 0;
+    margin: 0;
+  }
+  body {
+    background-color: #E1DFE1;
+  }
+  /* nav bar*/
+  nav {
+    color: white;
+    background-image: url(images/background-nav.png);
+    background-size: 135%;
+    width: 100%;
+    background-color: transparent;
+    font-family: jura;
+  }
+  h1 {
+    font-size: 1em;
+    padding: 0.75em;
+  }
+  .image-logo {
+    width: 5rem;
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+    text-decoration: none;
+    color: inherit;
+  }
+  .nav-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  /*cards*/
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem 1rem;
+    border-radius: 1.5rem;
+    height: 100%;
+    font-family: jura;
+    background-color: #988469;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    object-fit: cover;
+    object-position: center;
+    flex-shrink: 0;
+  }
+  
+#suivant:hover {
+    opacity: 1;
+}
+#precedent:hover{
+    opacity: 1;
+}
+#suivant{
+    right: 20px;
+}
+#precedent{
+    left: 5px;
 }
 
-body {
-  background-color: #E1DFE1;
+#suivant ,#precedent{
+    position: absolute;
+    top: 150px;
+    opacity: 1;
 }
-
-/* nav bar*/
-nav {
-  color: white;
-  background-image: url(images/background-nav.png);
-  background-size: 135%;
-  width: 100%;
-  background-color: transparent;
-  font-family: jura;
+.image-container{
+    /**position: relative;**/
 }
-
-h1 {
-  font-size: 1em;
-  padding: 0.75em;
-}
-
-.image-logo {
-  width: 5rem;
-}
-
-ul {
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-
-}
-
-li {
-  margin: 0.5em;
-}
-
-li a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.nav-header {
-  display: flex;
-  justify-content: space-between;
-
-}
-
-/*footer*/
-u footer {
-
-  height: 200px;
-  background-color: rgb(145, 142, 142);
-
-}
-
-/** CAROUSEL**/
-
-.slider-container {
-  /**max-width: 800px;**/
-  position: relative;
-  margin: auto;
-  height: 350px;
-  overflow: hidden;
-}
-
-.menu {
-  position: absolute;
-  left: 0;
-  z-index: 11;
-  width: 100%;
-  bottom: 0;
-  text-align: center;
-}
-
-.menu label {
-  cursor: pointer;
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background: #ccc;
-  border-radius: 50px;
-  margin: 0 0.2em 1em;
-}
-
-.menu label:hover,
-.menu label:focus {
-  background: #1c87c9;
-}
-
-.slide-input {
-  opacity: 0;
-}
-
-.slide-img {
-  width: 100%;
-  height: 300px;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  z-index: 10;
-  transition: left 0s 0.75s;
-}
-
-[id^="slide"]:checked+.slide-img {
-  left: 0;
-  z-index: 100;
-  transition: left 0.65s ease-out;
-}
-
-/** FIN CAROUSEL **/
+  .card-img {
+    position: relative;    
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+  }
+  .name-restaurant {
+    margin-bottom: 0.4em;
+    margin-top: 0.4em;
+    font-size: 1.3em;
+  }
+  .restaurant-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+  }
+  .restaurant-description {
+    font-family: Kaisei HarunoUmi;
+  }
+  .restaurant-quote {
+    margin-top: 0.4em;
+    font-size: 1.2em;
+    font-style: italic;
+  }
+  .card-button {
+    font-family: Kaisei HarunoUmi;
+    color: #90862B;
+    border-style: none;
+    border-radius: 0.75rem;
+  }
+  /*footer*/
+  u footer {
+    height: 200px;
+    background-color: rgb(145, 142, 142);
+  }
+  /** CAROUSEL**/
+  .slider-container {
+    /**max-width: 800px;**/
+    position: relative;
+    margin: auto;
+    height: 350px;
+    overflow: hidden;
+  }
+  .menu {
+    position: absolute;
+    left: 0;
+    z-index: 11;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+  }
+  .menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50px;
+    margin: 0 0.2em 1em;
+  }
+  .menu label:hover,
+  .menu label:focus {
+    background: #1C87C9;
+  }
+  .slide-input {
+    opacity: 0;
+  }
+  .slide-img {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    transition: left 0s 0.75s;
+  }
+  [id^="slide"]:checked+.slide-img {
+    left: 0;
+    z-index: 100;
+    transition: left 0.65s ease-out;
+  }
+  /** FIN CAROUSEL **/
 
 /**MOSAIQUE de PHOTOS en GRID**/
 .titreMosaique {
@@ -150,60 +195,89 @@ u footer {
   width: 100%;
   height: 100%;
 }
+  /** bouton commentaire **/
+  .btn {
+    font-family: "Jura", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    font-weight: bolder;
+    color: #fff;
+    background-color: #999150;
+    padding: 10px 30px;
+    border: none;
+    box-shadow: rgb(0, 0, 0) 4px 1px 22px 1px;
+    border-radius: 50px;
+    transition: 1195ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+  }
+  .btn:hover {
+    transition: 1195ms;
+    padding: 20px 50px;
+    transform: translateY(-0px);
+    background-color: #999150;
+    color: #FFFFFF;
+    border: none;
+  }
+  .btn-cmnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /** FIN bouton commentaire **/
 
 
-
-/** bouton commentaire **/
-
-.btn {
-  font-family: "Jura", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  font-weight: bolder;
-  color: #fff;
-  background-color: #999150;
-  padding: 10px 30px;
-  border: none;
-  box-shadow: rgb(0, 0, 0) 4px 1px 22px 1px;
-  border-radius: 50px;
-  transition: 1195ms;
-  transform: translateY(0);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  cursor: pointer;
-}
-
-.btn:hover {
-  transition: 1195ms;
-  padding: 20px 50px;
-  transform: translateY(-0px);
-  background-color: #999150;
-  color: #ffffff;
-  border: none;
-}
-
-.btn-cmnt {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/** FIN bouton commentaire **/
-
+  /** DEBUT du Footer **/
 
 .logofooter {
-  width: 3%;
+    width: 2em;
+    margin-left: 0.3em;
 }
 
 .lunefooter {
-  width: 20%;
+  margin-top: 1.5em;
+    width: 7em;
+    height: 7em;
 }
 
 footer {
-  display: flex;
-  flex-direction: row;
+   background-color: rgb(174, 165, 165);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 10em;
+    color: rgb(231, 222, 222);
 }
+
+.contact {
+  font-size: 10px;
+  margin-top: 3em;
+}
+
+.contact p {
+  margin-bottom: 0.5em;
+}
+
+.developpeurs {
+  font-size: 10px;
+  margin-right:2em ;
+  flex-direction: column;
+}
+
+.developpeurs h3 {
+  text-align: center;
+  margin-top: 1em;
+}
+
+#idev {
+  flex-direction: column;
+  text-align: left;
+}
+
+
