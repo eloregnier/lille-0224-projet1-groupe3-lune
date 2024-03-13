@@ -9,55 +9,57 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
     <title>Office de tourisme de la Lune | WCS</title>
-    
+
 
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="nav-header"><img class="image-logo" src="images/logo.png"
-                    alt="Logo de l'office de tourisme de la lune">
-                <section>
+            <div class="nav-header">
+                <img id="image-logo" src="images/logo.png" alt="Logo de l'office de tourisme de la lune">
+                <h1>Site officiel de tourisme de la Lune</h1>
+                <section id="navBarFixed">
                     <ul>
-                        <li><a href="">Manger</a></li>
-                        <li><a href="">Dormir</a></li>
-                        <li><a href="">Activités</a></li>
+                        <li class="nav-bar-li"><a href="#image-logo">ACCUEIL</a></li>
+                        <li class="nav-bar-li"><a href="">MANGER</a></li>
+                        <li class="nav-bar-li"><a href="">DORMIR</a></li>
+                        <li class="nav-bar-li"><a href="">ACTIVITÉS</a></li>
                     </ul>
                 </section>
             </div>
-            <h1>Site officiel de tourisme de la Lune</h1>
+
         </nav>
     </header>
     <main>
-            <!---------------------CAROUSSEL--------------------> 
-            <div class="slider-container">
-                <div class="menu">
-                    <label for="slide-dot-1"></label>
-                    <label for="slide-dot-11"></label>
-                    <label for="slide-dot-2"></label>
-                    <label for="slide-dot-3"></label> 
-                    <label for="slide-dot-4"></label>
-                    <label for="slide-dot-5"></label>
-                </div>
-    
-                <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
-                <img class="slide-img" src="/images/slide1.png">
-                <input class="slide-input" id="slide-dot-11" type="radio" name="slides">
-                <img class="slide-img" src="/images/slide11.png">
-    
-                <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
-                <img class="slide-img" src="/images/slide2.png">
-    
-                <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
-                <img class="slide-img" src="/images/slide3.png">
-    
-                <input class="slide-input" id="slide-dot-4" type="radio" name="slides">
-                <img class="slide-img" src="/images/slide4.png">
-    
-                <input class="slide-input" id="slide-dot-5" type="radio" name="slides">
-                <img class="slide-img" src="/images/slide5.png">
+        <!---------------------CAROUSSEL-------------------->
+        <div class="slider-container">
+            <div class="menu">
+                <label for="slide-dot-1"></label>
+                <label for="slide-dot-11"></label>
+                <label for="slide-dot-2"></label>
+                <label for="slide-dot-3"></label>
+                <label for="slide-dot-4"></label>
+                <label for="slide-dot-5"></label>
             </div>
+
+            <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
+            <img class="slide-img" src="images/slide1.png">
+            <input class="slide-input" id="slide-dot-11" type="radio" name="slides">
+            <img class="slide-img" src="images/slide11.png">
+
+            <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
+            <img class="slide-img" src="images/slide2.png">
+
+            <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
+            <img class="slide-img" src="images/slide3.png">
+
+            <input class="slide-input" id="slide-dot-4" type="radio" name="slides">
+            <img class="slide-img" src="images/slide4.png">
+
+            <input class="slide-input" id="slide-dot-5" type="radio" name="slides">
+            <img class="slide-img" src="images/slide5.png">
+        </div>
 
         <section>
             <h2></h2>
@@ -93,6 +95,7 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, nihil? Libero vel ut aliquid
                     ducimus rerum culpa a sit quasi, corrupti commodi earum, dolor iusto ipsam. Consequuntur facilis
                     adipisci rem? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat et natus ipsum
+
                     recusandae autem ea harum, quis facilis non atque culpa expedita provident similique. Perspiciatis
                     dicta magnam vel velit delectus?</p>
             </article>
@@ -141,7 +144,7 @@
             </article>
         </section>
         <section class="btn-cmnt">
-            <button class="btn" >CECI EST LE BOUTON DE COMMENTAIRE</button>
+            <button class="btn">CECI EST LE BOUTON DE COMMENTAIRE</button>
         </section>
     </main>
     <footer>
@@ -169,5 +172,6 @@
 
     </footer>
 </body>
+<script src="script.js"></script>
 
 </html>
