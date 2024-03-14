@@ -1,38 +1,32 @@
 // POP UP
-console.log('hello pop');
-//Cette fonction affiche la popup pour partager son commentaire.
+
+//Cette fonction affiche la popup par changement de classe
 function afficherPopup() {
     let popupBackground = document.querySelector(".popupBackground")
     // La popup est masquée par défaut (display:none), ajouter la classe "active"
     // va changer son display et la rendre visible.
     popupBackground.classList.add("active")
 };
-/**
- * Cette fonction cache la popup pour partager son commentaire.
- */
+
+//Cette fonction cache la popup lors du click sur le background par changement de classe
+
 function cacherPopup() {
     let popupBackground = document.querySelector(".popupBackground")
-    // La popup est masquée par défaut (display:none), supprimer la classe "active"
-    // va rétablir cet affichage par défaut.
     popupBackground.classList.remove("active")
 };
 
 // Cette fonction initialise les écouteurs d'événements qui concernent l'affichage de la popup.
 
 function initAddEventListenerPopup() {
-    // On écoute le click sur le bouton "commentaire"
+    // On écoute le click sur le bouton "commentaire" cela affiche la pop up
     let btnComment = document.querySelector(".btn")
     let popupBackground = document.querySelector(".popupBackground")
     btnComment.addEventListener("click", () => {
-        // Quand on a cliqué sur le bouton commentaire, on affiche la popup
         popupBackground.classList.add("active")
     });
-    // On écoute le click sur la div "popupBackground"
+    // On écoute le click sur la div "popupBackground", si click baground alors cache la pop up
     popupBackground.addEventListener("click", (event) => {
-        // Si on a cliqué précisément sur la popupBackground
-        // (et pas un autre élément qui se trouve dedant)
         if (event.target === popupBackground) {
-            // Alors on cache la popup
             cacherPopup()
         }
     });
@@ -40,8 +34,5 @@ function initAddEventListenerPopup() {
 
 initAddEventListenerPopup()
 
-let btnEnvoyer = document.querySelector('.btnEnvoyer')
-btnEnvoyer.addEventListener = ("click", () => {
-    alert("Commentaire envoyé")
-});
+
 
