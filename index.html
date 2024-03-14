@@ -109,6 +109,7 @@
             <img class="img5"
                 src="https://img.freepik.com/photos-gratuite/chaton-curieux-jouant-dans-feuilles-automne_157027-4115.jpg?size=626&ext=jpg&ga=GA1.1.406771163.1696592693&semt=ais"
                 alt="chat5">
+
             </section>
             <!----------------- FIN MOSAIQUE---------------------------------->
 
@@ -119,6 +120,7 @@
     </main>
 
     <!----------------- DEBUT Footer---------------------------------->
+
     <footer>
         <img class="lunefooter" src="images/logo.png" alt="Logo de l'office de tourisme de la lune">
         <section class="contact">
@@ -141,9 +143,29 @@
         </section>
     </footer>
     <!------------------ FIN Footer---------------------------------->
+
+    <!--POP UP AVIS-->
+    <div class="popupBackground">
+        <form method="get" action="" class="formulaire">
+            <p class="fullName">
+                <label for="name">Votre Nom-Prénom</label>
+                <input type="text" id="name" placeholder="ex: Dupuis Jean" size="30" </p>
+            <p class="fullEmail">
+                <label for="email">Votre adresse mail</label>
+                <input type="email" id="email" placeholder="ex: Dupuis.Jean@gmail.com" size="30" </p>
+            <p class="fullComment">
+                <label for="comment">Votre Commentaire</label><br>
+                <textarea name="comment" id="comment" rows="5" cols="40"></textarea>
+                <button class="btnEnvoyer">Envoyer</button>
+            </p>
+
+        </form>
+    </div>
 </body>
 
 <script src="script.js">
+</script>
+<script src="popup.js">
 </script>
 
 </html>

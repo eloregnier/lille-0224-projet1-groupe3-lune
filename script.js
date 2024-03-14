@@ -23,7 +23,7 @@ function myFunction() {
 const dropdownBtn = document.querySelector(".dropdown-button");
 const dropdownMenu = document.querySelector(".dropdown-menu-content");
 dropdownBtn.addEventListener("click", function () {
-    dropdownMenu.classList.toggle("visible");
+	dropdownMenu.classList.toggle("visible");
 })
 
 
@@ -46,5 +46,7 @@ const slides = [
 	}
 ]
 
-const flecheSuivant=document.querySelectorAll('#suivant')
+const flecheSuivant = document.querySelectorAll('#suivant')
+
+
 
