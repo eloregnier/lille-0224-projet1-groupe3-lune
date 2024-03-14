@@ -19,12 +19,19 @@ function myFunction() {
 }
 // fin nav bar fixed
 
+// bouton dropdown
 
-const dropdownBtn = document.querySelector(".dropdown-button");
-const dropdownMenu = document.querySelector(".dropdown-menu-content");
-dropdownBtn.addEventListener("click", function () {
-	dropdownMenu.classList.toggle("visible");
-})
+const dropdownBtn = document.querySelectorAll(".dropdown-button");
+const dropdownMenu = document.querySelectorAll(".dropdown-menu-content");
+for (let i = 0; i < dropdownBtn.length; i++) {
+	dropdownBtn[i].addEventListener("click", function () {
+		dropdownMenu[i].classList.toggle("visible");
+	})
+}
+
+//fin bouton dropdown
+
+
 
 
 const slides = [

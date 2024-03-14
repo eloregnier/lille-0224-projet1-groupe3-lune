@@ -83,10 +83,11 @@ li a {
   border-radius: 1rem;
 }
 
-.name-restaurant {
+.name-cardelement {
   margin-bottom: 0.4em;
   margin-top: 0.4em;
   font-size: 1.3em;
+  text-align: center;
 }
 
 .dropdown-menu-content {
@@ -97,18 +98,18 @@ li a {
   display: block;
 }
 
-.restaurant-section {
+.cardelement-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0.5rem;
 }
 
-.restaurant-description {
+.cardelement-description {
   font-family: Kaisei HarunoUmi;
 }
 
-.restaurant-quote {
+.cardelement-quote {
   margin-top: 0.4em;
   font-size: 1.2em;
   font-style: italic;
@@ -137,6 +138,7 @@ li a {
 }
 
 /**FIN CARDS**/
+
 
 
 /** CAROUSEL**/
