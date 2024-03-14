@@ -262,45 +262,57 @@ li a {
 
   /** DEBUT du Footer **/
 
-.logofooter {
-  width: 2em;
-  margin-left: 0.3em;
-}
-
-.lunefooter {
-  width: 20%;
-}
-
-footer {
-  background-color: rgb(174, 165, 165);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  height: 10em;
-  color: rgb(231, 222, 222);
-}
-
-.contact {
-  font-size: 10px;
-  margin-top: 3em;
-}
-
-.contact p {
-  margin-bottom: 0.5em;
-}
-
-.developpeurs {
-  font-size: 10px;
-  margin-right: 2em;
-  flex-direction: column;
-}
-
-.developpeurs h3 {
-  text-align: center;
-  margin-top: 1em;
-}
-
-#idev {
-  flex-direction: column;
-  text-align: left;
-}
+  .logofooter {
+    width: 2em;
+    margin-left: 0.3em;
+  }
+  
+  .lunefooter {
+    margin-top: 1.4em;
+    width: 6em;
+    height: 6em;
+  }
+  
+  footer {
+    background-color: rgb(174, 165, 165);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10em;
+    color: rgb(231, 222, 222);
+  }
+  
+  .contact {
+    font-size: 10px;
+    margin-top: 3em;
+  }
+  
+  .contact p {
+    margin-bottom: 0.5em;
+  }
+  
+  .developpeurs {
+    margin-top: 1.5em;
+    font-size: 10px;
+    margin-right: 2em;
+    flex-direction: column;
+  }
+  
+  .developpeurs h3 {
+    text-align: center;
+    margin-top: 1em;
+  }
+  
+  #idev {
+    flex-direction: column;
+    text-align: left;
+  }
+  
+   /** FIN du Footer **/
+  
+  /* DEBUT RESPONSIVE */
+  
+  @media screen and (min-width: 992px) {
+  
+    
+  }
