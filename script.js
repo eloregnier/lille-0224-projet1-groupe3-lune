@@ -48,3 +48,5 @@ const slides = [
 
 const flecheSuivant = document.querySelectorAll('#suivant')
 
+
+
