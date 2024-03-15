@@ -1,7 +1,3 @@
-root {
-  --font-principal: jura;
-}
-
 * {
   margin: 0;
   box-sizing: border-box;
@@ -11,7 +7,7 @@ body {
   background-color: #E1DFE1;
 }
 
-/* DEBUT DE NAV */
+/* --------------------------DEBUT DE NAV-------------------------- */
 
 /* nav bar
     background-image: url(images/background-nav.png);
@@ -64,9 +60,9 @@ li a {
   display: flex;
 }
 
-/* FIN NAV BAR */
+/* --------------------------FIN NAV BAR-------------------------- */
 
-/*CARDS*/
+/*--------------------------CARDS--------------------------*/
 .card-container {
   display: flex;
   flex-direction: column;
@@ -141,7 +137,14 @@ li a {
   transition: all 0.3s ease;
 }
 
-/**FIN CARDS**/
+h2 {
+  font-family: jura;
+  padding-left: 1em;
+  font-size: 2em;
+  text-shadow: gray 2px 1px
+}
+
+/**--------------------------FIN CARDS--------------------------**/
 
 
 
@@ -366,39 +369,39 @@ footer {
     left: 30%;
   }
 
-/* --------------------------nav bar responsive-------------------------- */
-.nav-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  /* --------------------------nav bar responsive-------------------------- */
+  .nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-h1 {
-  font-size: 1.5em;
-}
+  h1 {
+    font-size: 1.5em;
+  }
 
-#image-logo {
-  padding: 1em;
-  width: 12%;
-}
+  #image-logo {
+    padding: 1em;
+    width: 12%;
+  }
 
-/* --------------------------fin nav bar-------------------------- */
+  /* --------------------------fin nav bar-------------------------- */
 
-/* --------------------------cards-------------------------- */
-.restaurant-cards {
-  display: flex;
-  justify-content: center;
-}
+  /* --------------------------cards-------------------------- */
+  .restaurant-cards {
+    display: flex;
+    justify-content: center;
+  }
 
-.hotel-cards {
-  display: flex;
-  justify-content: center;
-}
+  .hotel-cards {
+    display: flex;
+    justify-content: center;
+  }
 
-.activity-cards {
-  display: flex;
-  justify-content: center;
-}
+  .activity-cards {
+    display: flex;
+    justify-content: center;
+  }
 
-*/ --------------------------fin cards-------------------------- */
+  */ --------------------------fin cards-------------------------- */
 }
