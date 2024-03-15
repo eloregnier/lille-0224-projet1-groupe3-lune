@@ -18,7 +18,7 @@ nav {
   color: white;
   width: 100%;
   background-color: black;
-  font-family: jura;
+  font-family: "Jura";
   text-align: center;
 }
 
@@ -139,9 +139,10 @@ li a {
 
 h2 {
   font-family: jura;
-  padding-left: 1em;
   font-size: 2em;
-  text-shadow: gray 2px 1px
+  text-shadow: gray 2px 1px;
+  text-align: center;
+  font-size: 3em;
 }
 
 /**--------------------------FIN CARDS--------------------------**/
@@ -291,6 +292,7 @@ footer {
   justify-content: space-between;
   height: 10em;
   color: rgb(231, 222, 222);
+  font-family: jura;
 }
 
 .contact {
@@ -401,6 +403,11 @@ footer {
   .activity-cards {
     display: flex;
     justify-content: center;
+  }
+
+  .card-container:hover {
+    box-shadow: 0.4em 0.4em black;
+    transition: box-shadow .3s;
   }
 
   */ --------------------------fin cards-------------------------- */
