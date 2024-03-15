@@ -1,3 +1,7 @@
+root {
+  --font-principal: jura;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -362,4 +366,39 @@ footer {
     left: 30%;
   }
 
+/* --------------------------nav bar responsive-------------------------- */
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+#image-logo {
+  padding: 1em;
+  width: 12%;
+}
+
+/* --------------------------fin nav bar-------------------------- */
+
+/* --------------------------cards-------------------------- */
+.restaurant-cards {
+  display: flex;
+  justify-content: center;
+}
+
+.hotel-cards {
+  display: flex;
+  justify-content: center;
+}
+
+.activity-cards {
+  display: flex;
+  justify-content: center;
+}
+
+*/ --------------------------fin cards-------------------------- */
 }
