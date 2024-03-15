@@ -4,7 +4,8 @@
 }
 
 body {
-  background-color: #E1DFE1;
+  background-image: url(images/galaxy.jpeg);
+
 }
 
 /* --------------------------DEBUT DE NAV-------------------------- */
@@ -150,7 +151,8 @@ li a {
 h2 {
   font-family: jura;
   font-size: 2em;
-  text-shadow: gray 2px 1px;
+  color: whitesmoke;
+  text-shadow: rgb(198, 196, 196) 2px 1px;
   text-align: center;
   font-size: 3em;
 }
@@ -166,6 +168,7 @@ h2 {
   text-align: center;
   margin-top: 1em;
   margin-bottom: 0.4em;
+  font-size: xx-large;
 }
 
 .mosaique {
@@ -420,9 +423,9 @@ footer {
     transition: box-shadow .3s;
   }
 
-  */ --------------------------fin cards-------------------------- */
+  /* --------------------------fin cards-------------------------- */
 
-    /* --------------------------début MOSAIQUE NONE-------------------------- */
+  /* --------------------------début MOSAIQUE NONE-------------------------- */
   .titreMosaique {
     display: none;
   }
@@ -432,4 +435,10 @@ footer {
   }
 
   /* --------------------------fin MOSAIQUE NONE-------------------------- */
+
+  /* -----------------------FOOTER ----------------------------------------*/
+  .contact {
+    margin-left: -55%;
+  }
+
 }
