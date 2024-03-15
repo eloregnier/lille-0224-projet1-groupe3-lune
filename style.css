@@ -1,7 +1,3 @@
-root {
-  --font-principal: jura;
-}
-
 * {
   margin: 0;
   box-sizing: border-box;
@@ -11,7 +7,7 @@ body {
   background-color: #E1DFE1;
 }
 
-/* DEBUT DE NAV */
+/* --------------------------DEBUT DE NAV-------------------------- */
 
 /* nav bar
     background-image: url(images/background-nav.png);
@@ -64,7 +60,9 @@ li a {
   display: flex;
 }
 
-/* FIN NAV BAR */
+/* --------------------------FIN NAV BAR-------------------------- */
+
+
 
 /*CAROUSSEL*/
 .photo {
@@ -75,7 +73,7 @@ li a {
   display: inline-block;
 }
 
-/*CARDS*/
+/*--------------------------CARDS--------------------------*/
 .card-container {
   display: flex;
   flex-direction: column;
@@ -150,7 +148,14 @@ li a {
   transition: all 0.3s ease;
 }
 
-/**FIN CARDS**/
+h2 {
+  font-family: jura;
+  padding-left: 1em;
+  font-size: 2em;
+  text-shadow: gray 2px 1px
+}
+
+/**--------------------------FIN CARDS--------------------------**/
 
 
 
@@ -388,5 +393,8 @@ footer {
     justify-content: center;
   }
 
-  /* --------------------------fin cards-------------------------- */
+
+  */ --------------------------fin cards-------------------------- */
+
+
 }
