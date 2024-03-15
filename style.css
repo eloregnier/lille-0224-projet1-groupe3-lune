@@ -331,6 +331,7 @@ footer {
   position: fixed;
   top: 20%;
   left: -2%;
+  /*modifié dans le media queries*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -346,20 +347,26 @@ footer {
 
 .active {
   display: flex;
-  position: absolute;
-  top: 32%;
+  top: 0%;
   left: 0%;
   height: 200%;
-  background-color: rgba(83, 82, 82, 0.5);
+  background-color: rgba(83, 82, 82, 0.9);
 }
 
 
 
 /* DEBUT RESPONSIVE */
 
-@media screen and (min-width: 992px) {}
+@media screen and (min-width: 992px) {
 
-/* nav bar */
+
+
+  /* -----------------FORMULAIRE RESPONSIVE ---------------*/
+  .formulaire {
+    left: 30%;
+  }
+
+/* --------------------------nav bar responsive-------------------------- */
 .nav-header {
   display: flex;
   justify-content: space-between;
@@ -375,9 +382,9 @@ h1 {
   width: 12%;
 }
 
-/* fin nav bar */
+/* --------------------------fin nav bar-------------------------- */
 
-/* cards */
+/* --------------------------cards-------------------------- */
 .restaurant-cards {
   display: flex;
   justify-content: center;
@@ -393,4 +400,5 @@ h1 {
   justify-content: center;
 }
 
-*/ fin cards */
+*/ --------------------------fin cards-------------------------- */
+}
