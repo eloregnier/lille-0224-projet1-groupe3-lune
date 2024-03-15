@@ -62,6 +62,17 @@ li a {
 
 /* --------------------------FIN NAV BAR-------------------------- */
 
+
+
+/*CAROUSSEL*/
+.photo {
+  width: 800px;
+  height: 400px;
+  background-position: center;
+  margin: 0;
+  display: inline-block;
+}
+
 /*--------------------------CARDS--------------------------*/
 .card-container {
   display: flex;
@@ -151,56 +162,35 @@ h2 {
 
 /** CAROUSEL**/
 
-.slider-container {
-  /**max-width: 800px;**/
-  position: relative;
-  margin: auto;
-  height: 350px;
-  overflow: hidden;
-}
-
-.menu {
+.bouton {
   position: absolute;
-  left: 0;
-  z-index: 11;
-  width: 100%;
-  bottom: 0;
-  text-align: center;
-}
-
-.menu label {
+  width: 70px;
   cursor: pointer;
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background: #ccc;
-  border-radius: 50px;
-  margin: 0 0.2em 1em;
+  top: 250px;
 }
 
-.menu label:hover,
-.menu label:focus {
-  background: #1C87C9;
-}
-
-.slide-input {
-  opacity: 0;
-}
-
-.slide-img {
-  width: 100%;
-  height: 300px;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  z-index: 10;
-  transition: left 0s 0.75s;
-}
-
-[id^="slide"]:checked+.slide-img {
+#g {
   left: 0;
-  z-index: 100;
-  transition: left 0.65s ease-out;
+  opacity: 0.4;
+  transition: all 0.3s ease;
+}
+
+#d {
+  right: 0;
+  opacity: 0.4;
+  transition: all 0.3s ease;
+}
+
+#g:hover {
+  transform: scale(1.1);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+#d:hover {
+  transform: scale(1.1);
+  opacity: 1;
+  transition: all 0.3s ease;
 }
 
 /** FIN CAROUSEL **/
