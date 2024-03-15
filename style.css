@@ -1,7 +1,3 @@
-root {
-  --font-principal: jura;
-}
-
 * {
   margin: 0;
   box-sizing: border-box;
@@ -11,7 +7,7 @@ body {
   background-color: #E1DFE1;
 }
 
-/* DEBUT DE NAV */
+/* --------------------------DEBUT DE NAV-------------------------- */
 
 /* nav bar
     background-image: url(images/background-nav.png);
@@ -22,7 +18,7 @@ nav {
   color: white;
   width: 100%;
   background-color: black;
-  font-family: jura;
+  font-family: "Jura";
   text-align: center;
 }
 
@@ -64,7 +60,9 @@ li a {
   display: flex;
 }
 
-/* FIN NAV BAR */
+/* --------------------------FIN NAV BAR-------------------------- */
+
+
 
 #caroussel,
 #d,
@@ -73,7 +71,8 @@ li a {
 }
 
 
-/*CARDS*/
+/*--------------------------CARDS--------------------------*/
+
 .card-container {
   display: flex;
   flex-direction: column;
@@ -148,7 +147,15 @@ li a {
   transition: all 0.3s ease;
 }
 
-/**FIN CARDS**/
+h2 {
+  font-family: jura;
+  font-size: 2em;
+  text-shadow: gray 2px 1px;
+  text-align: center;
+  font-size: 3em;
+}
+
+/**--------------------------FIN CARDS--------------------------**/
 
 
 
@@ -241,6 +248,7 @@ footer {
   justify-content: space-between;
   height: 10em;
   color: rgb(231, 222, 222);
+  font-family: jura;
 }
 
 .contact {
@@ -407,9 +415,14 @@ footer {
     justify-content: center;
   }
 
-  /* --------------------------fin cards-------------------------- */
+  .card-container:hover {
+    box-shadow: 0.4em 0.4em black;
+    transition: box-shadow .3s;
+  }
 
-  /* --------------------------début MOSAIQUE NONE-------------------------- */
+  */ --------------------------fin cards-------------------------- */
+
+    /* --------------------------début MOSAIQUE NONE-------------------------- */
   .titreMosaique {
     display: none;
   }
@@ -419,7 +432,4 @@ footer {
   }
 
   /* --------------------------fin MOSAIQUE NONE-------------------------- */
-
-
-
 }
