@@ -1,16 +1,16 @@
 console.log("hello carroussel");
 // CARROUSEL START //
 document.body.onload = function () {
-    nbr = 9;
+    nbr = 6;
     p = 0;
     container = document.getElementById("container");
-    let g = document.getElementById("g");
-    let d = document.getElementById("d");
+     g = document.getElementById("g");
+     d = document.getElementById("d");
     container.style.width = (1000 * nbr) + "px";
     for (i = 1; i <= nbr; i++) {
         div = document.createElement("div");
         div.className = "photo";
-        div.style.backgroundImage = "url('images/slide" + i + ".png')";
+        div.style.backgroundImage = "url('images/mosaic" + i + ".png')";     // deja modifier
         container.appendChild(div);
     }
 }
