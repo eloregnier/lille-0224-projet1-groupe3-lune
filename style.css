@@ -20,7 +20,7 @@ body {
   opacity: 0.9;
   text-align: center;
   color: #fff;
-  animation: disparaitre 200ms 3s forwards;
+  animation: disparaitre 200ms 0.5s forwards;
 }
 /**@keyframes disparaitre {
   to {
@@ -149,6 +149,22 @@ li a {
   display: flex;
 }
 
+#restaurants {
+  padding-top: 90px;
+  margin-top: -50px;
+}
+#hotels {
+  padding-top: 70px;
+  margin-top: -70px;
+}
+#sorties {
+  padding-top: 70px;
+  margin-top: -70px;
+}
+
+#quote-caroussel {
+  display: none;
+}
 /* --------------------------FIN NAV BAR-------------------------- */
 
 /*--------------------------CARDS--------------------------*/
@@ -406,7 +422,7 @@ footer {
   }
 
   h1 {
-    font-size: 1.5em;
+    font-size: 1.8em;
   }
 
   #image-logo {
@@ -466,6 +482,13 @@ footer {
     transition: all 0.3s ease;
   }
 
+  #quote-caroussel {
+    color: white;
+    font-family: jura;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+  }
   /** FIN CAROUSEL **/
 
   /* --------------------------cards-------------------------- */
