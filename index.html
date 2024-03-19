@@ -1,555 +1,564 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <title>Office de tourisme de la Lune | WCS</title>
-    <link rel="icon" href="images/Capture-d’écran-2024-03-07-à-15.55.53 (1).ico" type="image/x-icon">
-</head>
+    <link
+      rel="icon"
+      href="images/Capture-d’écran-2024-03-07-à-15.55.53 (1).ico"
+      type="image/x-icon"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="loader-con">
-        <div class="loader">
+      <div class="loader">
         <span>La lune</span>
-        </div>
+      </div>
     </div>
     <header>
-        <nav>
-            <div class="nav-header">
-                <img id="image-logo" src="images/logo.png" alt="Logo de l'office de tourisme de la lune">
-                <h1>Site officiel de tourisme de la Lune</h1>
-                <section id="navBarFixed">
-                    <ul>
-                        <li class="nav-bar-li"><a href="#image-logo">ACCUEIL</a></li>
-                        <li class="nav-bar-li"><a href="#manger">MANGER</a></li>
-                        <li class="nav-bar-li"><a href="#dormir">DORMIR</a></li>
-                        <li class="nav-bar-li"><a href="#activites"></a>ACTIVITES</li>
-                    </ul>
-                </section>
-            </div>
-
-        </nav>
+      <nav>
+        <div class="nav-header">
+          <img
+            id="image-logo"
+            src="images/logo.png"
+            alt="Logo de l'office de tourisme de la lune"
+          />
+          <h1>Site officiel de tourisme de la Lune</h1>
+          <section id="navBarFixed">
+            <ul>
+              <li class="nav-bar-li"><a href="#image-logo">ACCUEIL</a></li>
+              <li class="nav-bar-li"><a href="#manger">MANGER</a></li>
+              <li class="nav-bar-li"><a href="#dormir">DORMIR</a></li>
+              <li class="nav-bar-li"><a href="#activites"></a>ACTIVITES</li>
+            </ul>
+          </section>
+        </div>
+      </nav>
     </header>
     <main>
-        <!---------------------CAROUSSEL DESKTOP-------------------->
-        <!--start SPIN-->
-        <div align="center"> 
-            <div class="contener_general"> 
-                <div class="ballcolor ball_1">&nbsp;</div> 
-                <div class="ballcolor ball_2">&nbsp;</div> 
-                <div class="ballcolor ball_3">&nbsp;</div> 
-                <div class="ballcolor ball_4">&nbsp;</div> 
-            </div> 
+      <!---------------------CAROUSSEL DESKTOP-------------------->
+      <div id="carrousel">
+        <div id="container"></div>
+        <img src="images/arrow_right.png" class="bouton" id="d" />
+        <img src="images/arrow_left.png" class="bouton" id="g" />
+      </div>
+      <!---------------------CARROUSEL DESKTOP FIN----------------->
+
+      <!---------------------CARDS RESTAURANT 1----------------------------->
+      <h2 class="title-category" id="manger">MANGER</h2>
+      <div class="restaurant-cards">
+        <div class="card-container">
+          <div class="image-container">
+            <img src="images/americanfastfood.jpg" class="card-img" />
+          </div>
+          <section class="cardelement-section">
+            <h3 class="name-cardelement">MoonBite</h3>
+            <div class="dropdown-menu-content">
+              <article class="cardelement-description">
+                <p>
+                  Bienvenue chez MoonBite, le fast-food américain qui ramène un
+                  peu de chez soi sur la Lune! Implanté sur notre satellite
+                  depuis plusieurs décennies, MoonBite est le lieu de
+                  prédilection des résidents lunaires et des voyageurs
+                  interstellaires en quête d'une touche familière de saveurs
+                  américaines. Inspiré par les classiques des fast-foods de la
+                  Terre, notre menu propose une sélection alléchante de
+                  hamburgers juteux, de hot dogs chargés, de frites dorées et de
+                  milk-shakes crémeux, tous préparés avec des ingrédients
+                  soigneusement sélectionnés pour apporter un goût authentique à
+                  chaque bouchée. Chez MoonBite, nous comprenons que
+                  l'éloignement de la Terre peut engendrer une certaine
+                  nostalgie pour les saveurs familières qui nous manquent sur la
+                  Lune. C'est pourquoi nous nous efforçons de recréer ces
+                  délices culinaires avec une attention méticuleuse aux détails,
+                  en veillant à ce que chaque plat évoque des souvenirs
+                  chaleureux de chez soi. De la sauce secrète de nos hamburgers
+                  aux assaisonnements spéciaux de nos frites, chaque élément de
+                  notre menu est conçu pour raviver les papilles gustatives et
+                  apporter un réconfort bienvenu dans l'espace. Que vous soyez
+                  un astronaute en mission longue durée ou un colon résidant sur
+                  la Lune, MoonBite est là pour combler votre appétit et apaiser
+                  votre nostalgie avec des saveurs authentiques de fast-food
+                  américain. Rejoignez-nous pour une expérience culinaire qui
+                  vous ramène instantanément chez vous, même à des millions de
+                  kilomètres de distance!
+                </p>
+              </article>
+              <blockquote class="cardelement-quote">
+                "Je me suis régalé et je me suis revu à 17 ans à Houston en
+                train de manger mon hamburger préféré. C'est l'adresse à visiter
+                si les États-Unis vous manquent !"
+              </blockquote>
+            </div>
+          </section>
+          <div class="button-container">
+            <button class="dropdown-button">V</button>
+          </div>
         </div>
-       <!-- FIN SPIN-->
-        <div id="carrousel">
-            <div id="container">
+
+        <!----------------- FIN CARDS RESTAURANT 1---------------------------------->
+        <!---------------------CARDS RESTAURANT 2----------------------------->
+        <div class="card-container">
+          <div class="image-container">
+            <img src="images/asianrestaurant.jpg" class="card-img" />
+          </div>
+          <section class="cardelement-section">
+            <h3 class="name-cardelement">MoonWok</h3>
+            <div class="dropdown-menu-content">
+              <article class="cardelement-description">
+                <p>
+                  Bienvenue chez MoonWok, l'expérience gastronomique asiatique
+                  ultime sur la Lune! Niché au cœur de notre colonie lunaire,
+                  MoonWok vous invite à un voyage culinaire exotique où les
+                  saveurs de l'Asie rencontrent le mystère de l'espace. Inspiré
+                  par les traditions culinaires anciennes de l'Extrême-Orient,
+                  notre restaurant offre un éventail captivant de plats
+                  authentiques, allant des délices épicés de la cuisine chinoise
+                  aux arômes délicats de la cuisine japonaise, en passant par
+                  les saveurs exotiques de la cuisine thaïlandaise et bien plus
+                  encore. Chez MoonWok, chaque plat est préparé avec des
+                  ingrédients frais et des techniques de cuisson
+                  traditionnelles, garantissant une expérience gustative
+                  inégalée qui éveille les sens et ravit les palais. Que vous
+                  soyez un amateur de sushi, un passionné de curry ou un adepte
+                  des nouilles sautées, notre menu diversifié saura combler
+                  toutes vos envies culinaires avec une touche de flair lunaire.
+                  En plus de notre délicieuse cuisine, l'ambiance envoûtante de
+                  MoonWok vous transporte dans un autre monde, où les lumières
+                  tamisées et la musique d'ambiance créent une atmosphère de
+                  sérénité et d'émerveillement. Que ce soit pour une soirée
+                  romantique sous les étoiles ou un dîner en famille dans un
+                  cadre unique, MoonWok promet une expérience culinaire
+                  mémorable qui vous transporte au-delà des frontières de
+                  l'espace et du temps. Rejoignez-nous pour un festin céleste
+                  chez MoonWok, où les saveurs de l'Asie rencontrent la magie de
+                  la Lune!
+                </p>
+              </article>
+              <blockquote class="cardelement-quote">
+                "Leurs nems et rouleaux de printemps sont délicieux. Nous y
+                allons souvent avec mes amis. Je recommande fortement ce
+                restaurant."
+              </blockquote>
             </div>
-            <img src="images/arrow_right.png" class="bouton" id="d" />
-            <img src="images/arrow_left.png" class="bouton" id="g" />
+          </section>
+          <div class="button-container">
+            <button class="dropdown-button">V</button>
+          </div>
         </div>
-        <!---------------------CARROUSEL DESKTOP FIN----------------->
-
-        <!---------------------CARDS RESTAURANT 1----------------------------->
-        <h2 class="title-category" id="manger">MANGER</h2>
-        <div class="restaurant-cards">
-
-            <div class="card-container">
-                <div class="image-container">
-                    <img src="images/americanfastfood.jpg" class="card-img" />
-                </div>
-                <section class="cardelement-section">
-                    <h3 class="name-cardelement">MoonBite</h3>
-                    <div class="dropdown-menu-content">
-                        <article class="cardelement-description">
-                            <p>Bienvenue chez MoonBite, le fast-food américain qui ramène un peu de chez soi sur
-                                la Lune!
-                                Implanté sur notre satellite depuis plusieurs décennies, MoonBite est le lieu de
-                                prédilection des résidents lunaires et des voyageurs interstellaires en quête
-                                d'une touche
-                                familière de saveurs américaines. Inspiré par les classiques des fast-foods de
-                                la Terre,
-                                notre menu propose une sélection alléchante de hamburgers juteux, de hot dogs
-                                chargés, de
-                                frites dorées et de milk-shakes crémeux, tous préparés avec des ingrédients
-                                soigneusement
-                                sélectionnés pour apporter un goût authentique à chaque bouchée.
-                                Chez MoonBite, nous comprenons que l'éloignement de la Terre peut engendrer une
-                                certaine
-                                nostalgie pour les saveurs familières qui nous manquent sur la Lune. C'est
-                                pourquoi nous
-                                nous efforçons de recréer ces délices culinaires avec une attention méticuleuse
-                                aux détails,
-                                en veillant à ce que chaque plat évoque des souvenirs chaleureux de chez soi. De
-                                la sauce
-                                secrète de nos hamburgers aux assaisonnements spéciaux de nos frites, chaque
-                                élément de
-                                notre menu est conçu pour raviver les papilles gustatives et apporter un
-                                réconfort bienvenu
-                                dans l'espace.
-                                Que vous soyez un astronaute en mission longue durée ou un colon résidant sur la
-                                Lune,
-                                MoonBite est là pour combler votre appétit et apaiser votre nostalgie avec des
-                                saveurs
-                                authentiques de fast-food américain. Rejoignez-nous pour une expérience
-                                culinaire qui vous
-                                ramène instantanément chez vous, même à des millions de kilomètres de distance!
-                            </p>
-                        </article>
-                        <blockquote class="cardelement-quote">
-                            "Je me suis régalé et je me suis revu à 17 ans à Houston en train de manger mon hamburger
-                            préféré. C'est l'adresse à visiter si les États-Unis vous manquent !"
-                        </blockquote>
-                    </div>
-                </section>
-                <div class="button-container">
-                    <button class="dropdown-button">V
-                    </button>
-                </div>
+        <!----------------- FIN CARDS RESTAURANT 2---------------------------------->
+        <!---------------------CARDS RESTAURANT 3----------------------------->
+        <div class="card-container">
+          <div class="image-container">
+            <img src="images/moonrestaurant.jpg" class="card-img" />
+          </div>
+          <section class="cardelement-section">
+            <h3 class="name-cardelement">Lunar Delights</h3>
+            <div class="dropdown-menu-content">
+              <article class="cardelement-description">
+                <p>
+                  Bienvenue chez Lunar Delights, le premier restaurant de
+                  spécialités lunaires de notre satellite bien-aimé! Situé au
+                  cœur de notre colonie lunaire, Lunar Delights vous invite à
+                  découvrir une cuisine unique et innovante inspirée par les
+                  mystères et les merveilles de la Lune elle-même. Notre menu
+                  exclusif propose une sélection exquise de plats créatifs,
+                  élaborés à partir d'ingrédients lunaires soigneusement
+                  sélectionnés pour offrir une expérience gastronomique
+                  véritablement transcendante. Dégustez des mets extraordinaires
+                  tels que le fromage de roche lunaire fondant, les cratères de
+                  caviar d'algues et les brochettes de poulet marinées dans une
+                  sauce stellaire à base de poussière lunaire. Laissez-vous
+                  séduire par des desserts lunaires exquis, comme notre soufflé
+                  de lune au chocolat ou nos boules de glace à la vanille
+                  lunaire, inspirées par les cratères glacés de notre satellite
+                  enchanté. Chez Lunar Delights, chaque repas est une aventure
+                  culinaire, où les saveurs uniques de la Lune fusionnent avec
+                  l'imagination sans limites de notre équipe de chefs
+                  talentueux. Que vous soyez un astronaute en mission spatiale
+                  ou un habitant de longue date de notre colonie lunaire, Lunar
+                  Delights promet une expérience gastronomique inoubliable qui
+                  repousse les frontières de la cuisine traditionnelle et vous
+                  transporte dans un monde de délices lunaires. Rejoignez-nous
+                  pour un festin céleste chez Lunar Delights, où chaque bouchée
+                  est une ode à l'émerveillement et à la découverte!
+                </p>
+              </article>
+              <blockquote class="cardelement-quote">
+                "Super restaurant de spécialités lunaires ! De passage sur la
+                Lune, nous avons découvert ce restaurant et les spécialités de
+                la Lune par hasard et nous n'avons pas regretté cette
+                découverte. Nous avons découvert des saveurs et des légumes
+                nouveaux ! Je recommande vivement ce restaurant !"
+              </blockquote>
             </div>
-
-            <!----------------- FIN CARDS RESTAURANT 1---------------------------------->
-            <!---------------------CARDS RESTAURANT 2----------------------------->
-            <div class="card-container">
-                <div class="image-container">
-                    <img src="images/asianrestaurant.jpg" class="card-img" />
-                </div>
-                <section class="cardelement-section">
-                    <h3 class="name-cardelement">MoonWok</h3>
-                    <div class="dropdown-menu-content">
-                        <article class="cardelement-description">
-                            <p>Bienvenue chez MoonWok, l'expérience gastronomique asiatique ultime sur la Lune! Niché au
-                                cœur de notre colonie lunaire, MoonWok vous invite à un voyage culinaire exotique où les
-                                saveurs de l'Asie rencontrent le mystère de l'espace. Inspiré par les traditions
-                                culinaires
-                                anciennes de l'Extrême-Orient, notre restaurant offre un éventail captivant de plats
-                                authentiques, allant des délices épicés de la cuisine chinoise aux arômes délicats de la
-                                cuisine japonaise, en passant par les saveurs exotiques de la cuisine thaïlandaise et
-                                bien
-                                plus encore.
-                                Chez MoonWok, chaque plat est préparé avec des ingrédients frais et des techniques de
-                                cuisson traditionnelles, garantissant une expérience gustative inégalée qui éveille les
-                                sens
-                                et ravit les palais. Que vous soyez un amateur de sushi, un passionné de curry ou un
-                                adepte
-                                des nouilles sautées, notre menu diversifié saura combler toutes vos envies culinaires
-                                avec
-                                une touche de flair lunaire.
-                                En plus de notre délicieuse cuisine, l'ambiance envoûtante de MoonWok vous transporte
-                                dans
-                                un autre monde, où les lumières tamisées et la musique d'ambiance créent une atmosphère
-                                de
-                                sérénité et d'émerveillement. Que ce soit pour une soirée romantique sous les étoiles ou
-                                un
-                                dîner en famille dans un cadre unique, MoonWok promet une expérience culinaire mémorable
-                                qui
-                                vous transporte au-delà des frontières de l'espace et du temps. Rejoignez-nous pour un
-                                festin céleste chez MoonWok, où les saveurs de l'Asie rencontrent la magie de la Lune!
-                            </p>
-                        </article>
-                        <blockquote class="cardelement-quote">
-                            "Leurs nems et rouleaux de printemps sont délicieux. Nous y allons souvent avec mes amis. Je
-                            recommande fortement ce restaurant."
-                        </blockquote>
-                    </div>
-                </section>
-                <div class="button-container">
-                    <button class="dropdown-button">V
-                    </button>
-                </div>
-            </div>
-            <!----------------- FIN CARDS RESTAURANT 2---------------------------------->
-            <!---------------------CARDS RESTAURANT 3----------------------------->
-            <div class="card-container">
-                <div class="image-container">
-                    <img src="images/moonrestaurant.jpg" class="card-img" />
-                </div>
-                <section class="cardelement-section">
-                    <h3 class="name-cardelement">Lunar Delights</h3>
-                    <div class="dropdown-menu-content">
-                        <article class="cardelement-description">
-                            <p>Bienvenue chez Lunar Delights, le premier restaurant de spécialités lunaires de notre
-                                satellite bien-aimé! Situé au cœur de notre colonie lunaire, Lunar Delights vous invite
-                                à
-                                découvrir une cuisine unique et innovante inspirée par les mystères et les merveilles de
-                                la
-                                Lune elle-même. Notre menu exclusif propose une sélection exquise de plats créatifs,
-                                élaborés à partir d'ingrédients lunaires soigneusement sélectionnés pour offrir une
-                                expérience gastronomique véritablement transcendante.
-                                Dégustez des mets extraordinaires tels que le fromage de roche lunaire fondant, les
-                                cratères
-                                de caviar d'algues et les brochettes de poulet marinées dans une sauce stellaire à base
-                                de
-                                poussière lunaire. Laissez-vous séduire par des desserts lunaires exquis, comme notre
-                                soufflé de lune au chocolat ou nos boules de glace à la vanille lunaire, inspirées par
-                                les
-                                cratères glacés de notre satellite enchanté.
-                                Chez Lunar Delights, chaque repas est une aventure culinaire, où les saveurs uniques de
-                                la
-                                Lune fusionnent avec l'imagination sans limites de notre équipe de chefs talentueux. Que
-                                vous soyez un astronaute en mission spatiale ou un habitant de longue date de notre
-                                colonie
-                                lunaire, Lunar Delights promet une expérience gastronomique inoubliable qui repousse les
-                                frontières de la cuisine traditionnelle et vous transporte dans un monde de délices
-                                lunaires. Rejoignez-nous pour un festin céleste chez Lunar Delights, où chaque bouchée
-                                est
-                                une ode à l'émerveillement et à la découverte!
-                            </p>
-                        </article>
-                        <blockquote class="cardelement-quote">"Super restaurant de spécialités lunaires ! De passage sur
-                            la Lune, nous avons découvert ce restaurant et les spécialités de la Lune par hasard et nous
-                            n'avons pas regretté cette découverte. Nous avons découvert des saveurs et des légumes
-                            nouveaux ! Je recommande vivement ce restaurant !"
-
-                        </blockquote>
-                    </div>
-                </section>
-                <div class="button-container">
-                    <button class="dropdown-button">V
-                    </button>
-                </div>
-            </div>
+          </section>
+          <div class="button-container">
+            <button class="dropdown-button">V</button>
+          </div>
         </div>
-        <!----------------- FIN CARDS RESTAURANT 3---------------------------------->
-        <!---------------------CARDS HOTEL 1----------------------------->
-        <h2 class="title-category" id="dormir">DORMIR</h2>
+      </div>
+      <!----------------- FIN CARDS RESTAURANT 3---------------------------------->
+      <!---------------------CARDS HOTEL 1----------------------------->
+      <h2 class="title-category" id="dormir">DORMIR</h2>
 
-        <div class="hotel-cards">
-            <div class="card-container">
-                <div class="image-container">
-                    <img src="images/resort.jpg" class="card-img" />
-                </div>
-                <section class="cardelement-section">
-                    <h3 class="name-cardelement">Rocket Rest</h3>
-                    <div class="dropdown-menu-content">
-                        <article class="cardelement-description">
-                            <p>Bienvenue à Rocket Rest, l'ultime expérience d'hébergement sur la Lune! Niché au cœur de
-                                notre colonie lunaire, Rocket Rest offre une expérience d'hébergement unique en son
-                                genre,
-                                où vous pouvez dormir dans le confort de véritables capsules spatiales inspirées des
-                                fusées
-                                qui ont jadis sillonné l'espace.
-                                Chaque capsule est conçue pour vous offrir un séjour confortable et sécurisé, avec des
-                                aménagements modernes et des vues spectaculaires sur le paysage lunaire environnant.
-                                Imprégnez-vous de l'ambiance futuriste alors que vous vous détendez dans votre propre
-                                espace
-                                privé, avec tout le confort nécessaire pour une nuit de sommeil réparateur après une
-                                journée
-                                d'aventure sur la Lune.
-                                Que vous soyez un astronaute en mission spatiale ou un touriste en quête d'une
-                                expérience
-                                unique, Rocket Rest vous promet une expérience d'hébergement inoubliable qui vous
-                                transporte
-                                au-delà des étoiles. Rejoignez-nous pour une nuit sous les cieux lunaires chez Rocket
-                                Rest,
-                                où chaque séjour est une escapade vers l'inconnu et une exploration de l'espace infini!
-                            </p>
-                        </article>
-                        <blockquote class="cardelement-quote">
-                            "Superbe hôtel ! Tout était parfait ! L'ambiance de
-                            détente était incroyable, le lieu est
-                            sublime. Nous nous sommes pleinement reposés et ressourcés. Tout simplement incroyable !"
-                        </blockquote>
-                    </div>
-                </section>
-                <div class="button-container">
-                    <button class="dropdown-button">V
-                    </button>
-                </div>
+      <div class="hotel-cards">
+        <div class="card-container">
+          <div class="image-container">
+            <img src="images/resort.jpg" class="card-img" />
+          </div>
+          <section class="cardelement-section">
+            <h3 class="name-cardelement">Rocket Rest</h3>
+            <div class="dropdown-menu-content">
+              <article class="cardelement-description">
+                <p>
+                  Bienvenue à Rocket Rest, l'ultime expérience d'hébergement sur
+                  la Lune! Niché au cœur de notre colonie lunaire, Rocket Rest
+                  offre une expérience d'hébergement unique en son genre, où
+                  vous pouvez dormir dans le confort de véritables capsules
+                  spatiales inspirées des fusées qui ont jadis sillonné
+                  l'espace. Chaque capsule est conçue pour vous offrir un séjour
+                  confortable et sécurisé, avec des aménagements modernes et des
+                  vues spectaculaires sur le paysage lunaire environnant.
+                  Imprégnez-vous de l'ambiance futuriste alors que vous vous
+                  détendez dans votre propre espace privé, avec tout le confort
+                  nécessaire pour une nuit de sommeil réparateur après une
+                  journée d'aventure sur la Lune. Que vous soyez un astronaute
+                  en mission spatiale ou un touriste en quête d'une expérience
+                  unique, Rocket Rest vous promet une expérience d'hébergement
+                  inoubliable qui vous transporte au-delà des étoiles.
+                  Rejoignez-nous pour une nuit sous les cieux lunaires chez
+                  Rocket Rest, où chaque séjour est une escapade vers l'inconnu
+                  et une exploration de l'espace infini!
+                </p>
+              </article>
+              <blockquote class="cardelement-quote">
+                "Superbe hôtel ! Tout était parfait ! L'ambiance de détente
+                était incroyable, le lieu est sublime. Nous nous sommes
+                pleinement reposés et ressourcés. Tout simplement incroyable !"
+              </blockquote>
             </div>
-            <!----------------- FIN CARDS HOTEL 1---------------------------------->
-            <!---------------------CARDS HOTEL 2----------------------------->
-            <div class="card-container">
-                <div class="image-container">
-                    <img src="images/dome.jpg" class="card-img" />
-                </div>
-                <section class="cardelement-section">
-                    <h3 class="name-cardelement">Blune</h3>
-                    <div class="dropdown-menu-content">
-                        <article class="cardelement-description">
-                            <p>Bienvenue à Blune, l'expérience d'hébergement ultime sur la Lune! Niché au cœur de notre
-                                colonie lunaire, Blune offre un refuge luxueux et futuriste, où vous pouvez vous
-                                détendre et
-                                vous ressourcer dans des dômes spatiaux élégants et confortables.
-                                Nos dômes sont conçus pour offrir un mélange parfait d'esthétique contemporaine et de
-                                fonctionnalité, avec des aménagements modernes et des équipements de pointe pour assurer
-                                un
-                                séjour confortable et relaxant. Chaque dôme offre une vue imprenable sur le paysage
-                                lunaire
-                                environnant, vous permettant d'admirer les étoiles scintillantes et les cratères
-                                mystérieux
-                                depuis le confort de votre propre espace privé.
-                                Que vous soyez un astronaute en mission spatiale ou un voyageur en quête d'une
-                                expérience
-                                unique, Blune vous promet une escapade inoubliable qui repousse les frontières de
-                                l'hospitalité terrestre. Rejoignez-nous pour une expérience de séjour transcendante chez
-                                Blune, où chaque moment est une aventure dans l'espace et une célébration de la vie sur
-                                la
-                                Lune!
-                            </p>
-                        </article>
-                        <blockquote class="cardelement-quote">
-                            "Tout était parfait , les dômes sont vraiment très propres , des couvertures en plus sont
-                            proposées pour les plus frileux. Pour le dôme il n’y a rien de plus romantique, la vue est
-                            inoubliable, l’ambiance est excellente, le service parfait. Le dîner et le petit déjeuner
-                            étaient extrêmement copieux que dire de plus que bravo et merci infiniment pour
-                            ces merveilleux moments passés à vos côtés et ces beaux souvenirs qui seront ancrés en nous
-                            à jamais ."
-                        </blockquote>
-                    </div>
-                </section>
-                <div class="button-container">
-                    <button class="dropdown-button">V
-                    </button>
-                </div>
-            </div>
-            <!----------------- FIN CARDS HOTEL 2---------------------------------->
-            <!---------------------CARDS HOTEL 3----------------------------->
-            <div class="card-container">
-                <div class="image-container">
-                    <img src="images/formule1-0.png" class="card-img" />
-                </div>
-                <section class="cardelement-section">
-                    <h3 class="name-cardelement">F1 Lune</h3>
-                    <div class="dropdown-menu-content">
-                        <article class="cardelement-description">
-                            <p>Bienvenue chez F1 Lune, l'hôtel Formule 1 de choix sur la Lune! Fidèle à l'esprit de la
-                                célèbre chaîne d'hôtels économiques, F1 Lune offre un hébergement pratique et abordable
-                                pour
-                                les voyageurs à la recherche d'une expérience lunaire inoubliable.
-                                Nos chambres simples mais confortables sont équipées de tout ce dont vous avez besoin
-                                pour
-                                un séjour agréable, y compris des lits confortables, des douches rafraîchissantes et un
-                                accès Wi-Fi gratuit. Situé au cœur de notre colonie lunaire, LunarSpeed vous offre un
-                                point
-                                de départ idéal pour explorer les merveilles de la Lune.
-                                Que vous soyez un astronaute en mission spatiale ou un touriste en quête d'aventure, F1
-                                Lune
-                                vous offre un hébergement de qualité à un prix abordable. Rejoignez-nous pour une
-                                expérience
-                                de séjour pratique et confortable chez F1 Lune, où le confort ne fait pas défaut, même à
-                                des
-                                millions de kilomètres de la Terre!
-                            </p>
-                        </article>
-                        <blockquote class="cardelement-quote">
-                            "Merci à vous pour le service proposé qui change beaucoup des autres hôtels budget
-                            nous avons été agréablement surpris du service et de la propreté des chambres. Nous avons
-                            très bien dormi ! Endroit calme, propre et sécuritaire !" </blockquote>
-                    </div>
-                </section>
-                <div class="button-container">
-                    <button class="dropdown-button">V
-                    </button>
-                </div>
-            </div>
+          </section>
+          <div class="button-container">
+            <button class="dropdown-button">V</button>
+          </div>
         </div>
-        <!---------------- FIN CARDS HOTEL 3---------------------------------->
-        <!---------------------CARDS ACTIVITE 1----------------------------->
-        <h2 class="title-category" id="activites">ACTIVITÉS</h2>
-
-        <div class="activity-cards">
-            <div class="card-container">
-                <div class="image-container">
-                    <img src="images/attraction.jpg" class="card-img" />
-                </div>
-                <section class="cardelement-section">
-                    <h3 class="name-cardelement">Lunaireland</h3>
-                    <div class="dropdown-menu-content">
-                        <article class="cardelement-description">
-                            <p>Bienvenue au Parc Lunaireland, où vos rêves de découverte spatiale et
-                                d'aventure
-                                deviennent réalité! Niché sur la surface tranquille de la lune, notre parc d'attractions
-                                offre une expérience extraordinaire à tous les visiteurs intrépides.
-                                Explorez nos attractions uniques, depuis les montagnes russes à gravité zéro jusqu'aux
-                                simulations de promenades en rover lunaire à travers les cratères majestueux. Admirez la
-                                vue
-                                imprenable sur la Terre depuis notre tour d'observation lunaire, ou défiez vos amis dans
-                                des
-                                jeux de laser tag sous le clair de lune.
-                                Pour les amateurs de science, ne manquez pas nos expositions interactives sur
-                                l'astronomie
-                                et l'exploration spatiale, où vous pourrez en apprendre davantage sur les mystères
-                                fascinants de notre univers.
-                                Que vous soyez un astronaute chevronné ou un amateur d'aventure en herbe, le Parc
-                                Lunaireland offre une expérience inoubliable pour tous les âges. Rejoignez-nous pour
-                                une
-                                escapade cosmique et créez des souvenirs qui dureront toute une vie !
-                            </p>
-                        </article>
-                        <blockquote class="cardelement-quote">
-                            "Époustouflant, émerveillement garanti !
-                            Ambiance de Noël avec parade et feux d'artifice au top. Restauration variée (mais un peu
-                            chère). Attractions très bien réalisées et variées ! Je recommande à 100%"
-                        </blockquote>
-                    </div>
-                </section>
-                <div class="button-container">
-                    <button class="dropdown-button">V
-                    </button>
-                </div>
+        <!----------------- FIN CARDS HOTEL 1---------------------------------->
+        <!---------------------CARDS HOTEL 2----------------------------->
+        <div class="card-container">
+          <div class="image-container">
+            <img src="images/dome.jpg" class="card-img" />
+          </div>
+          <section class="cardelement-section">
+            <h3 class="name-cardelement">Blune</h3>
+            <div class="dropdown-menu-content">
+              <article class="cardelement-description">
+                <p>
+                  Bienvenue à Blune, l'expérience d'hébergement ultime sur la
+                  Lune! Niché au cœur de notre colonie lunaire, Blune offre un
+                  refuge luxueux et futuriste, où vous pouvez vous détendre et
+                  vous ressourcer dans des dômes spatiaux élégants et
+                  confortables. Nos dômes sont conçus pour offrir un mélange
+                  parfait d'esthétique contemporaine et de fonctionnalité, avec
+                  des aménagements modernes et des équipements de pointe pour
+                  assurer un séjour confortable et relaxant. Chaque dôme offre
+                  une vue imprenable sur le paysage lunaire environnant, vous
+                  permettant d'admirer les étoiles scintillantes et les cratères
+                  mystérieux depuis le confort de votre propre espace privé. Que
+                  vous soyez un astronaute en mission spatiale ou un voyageur en
+                  quête d'une expérience unique, Blune vous promet une escapade
+                  inoubliable qui repousse les frontières de l'hospitalité
+                  terrestre. Rejoignez-nous pour une expérience de séjour
+                  transcendante chez Blune, où chaque moment est une aventure
+                  dans l'espace et une célébration de la vie sur la Lune!
+                </p>
+              </article>
+              <blockquote class="cardelement-quote">
+                "Tout était parfait , les dômes sont vraiment très propres , des
+                couvertures en plus sont proposées pour les plus frileux. Pour
+                le dôme il n’y a rien de plus romantique, la vue est
+                inoubliable, l’ambiance est excellente, le service parfait. Le
+                dîner et le petit déjeuner étaient extrêmement copieux que dire
+                de plus que bravo et merci infiniment pour ces merveilleux
+                moments passés à vos côtés et ces beaux souvenirs qui seront
+                ancrés en nous à jamais ."
+              </blockquote>
             </div>
-            <!----------------- FIN CARDS ACTIVITE 1---------------------------------->
-            <!---------------------CARDS ACTIVITE 2----------------------------->
-            <div class="card-container">
-                <div class="image-container">
-                    <img src="images/rover.jpg" class="card-img" />
-                </div>
-                <section class="cardelement-section">
-                    <h3 class="name-cardelement">Rover lunaire</h3>
-                    <div class="dropdown-menu-content">
-                        <article class="cardelement-description">
-                            <p>Découvrez l'excitation de l'exploration lunaire avec notre incroyable activité de balade
-                                en
-                                Rover lunaire! Située sur la surface éclatante de la Lune, cette expérience inoubliable
-                                vous
-                                emmène à travers des paysages lunaires à couper le souffle, où chaque cratère et chaque
-                                montagne racontent une histoire de l'espace. Conduisez votre Rover spécialisé, équipé
-                                pour
-                                l'aventure extraterrestre, et admirez les vues spectaculaires du cosmos environnant. Que
-                                vous soyez un passionné d'astronomie ou un amateur d'aventure, cette excursion garantit
-                                des
-                                souvenirs lunaires pour toute une vie. Préparez-vous à vivre une expérience hors du
-                                commun
-                                sur notre balade en Rover lunaire!
-                            </p>
-                        </article>
-                        <blockquote class="cardelement-quote">
-                            "
-                            Expérience inoubliable. Un merci spécial à notre guide pour son accueil chaleureux et sa
-                            gentillesse. Nous avons vécu une expérience incroyable !"
-                        </blockquote>
-                    </div>
-                </section>
-                <div class="button-container">
-                    <button class="dropdown-button">V
-                    </button>
-                </div>
-            </div>
-            <!----------------- FIN CARDS ACTIVITE 2---------------------------------->
-            <!---------------------CARDS ACTIVITE 3----------------------------->
-            <div class="card-container">
-                <div class="image-container">
-                    <img src="images/hammam.jpg" class="card-img" />
-                </div>
-                <section class="cardelement-section">
-                    <h3 class="name-cardelement">Les sans ciels</h3>
-                    <div class="dropdown-menu-content">
-                        <article class="cardelement-description">
-                            <p>Explorez le summum du bien-être et de la relaxation cosmique avec notre activité de
-                                sources
-                                chaudes sur la Lune aux sans ciels! Nichées au cœur des cratères lunaires, nos sources
-                                chaudes
-                                naturelles
-                                offrent une expérience de détente comme nulle part ailleurs dans l'univers.
-                                Immergez-vous
-                                dans les eaux thermales revitalisantes, imprégnées des minéraux lunaires rares pour
-                                apaiser
-                                votre corps et votre esprit. Laissez-vous emporter par la tranquillité absolue alors que
-                                vous contemplez le paysage lunaire à couper le souffle depuis nos installations
-                                confortables
-                                et sécurisées. Que vous soyez en quête de guérison physique ou de revitalisation
-                                mentale,
-                                nos sources chaudes lunaires vous promettent une évasion céleste inégalée. Préparez-vous
-                                à
-                                vous ressourcer dans l'atmosphère sereine de nos sources chaudes aux sans ciels sur la
-                                Lune!
-                            </p>
-                        </article>
-                        <blockquote class="cardelement-quote">
-                            "Superbe lieu niché dans les cratères de la Lune !
-                            L'équipe est très accueillante que ce soit à l'accueil ou lors des soins. L'endroit est très
-                            propre. Hâte d'y revenir ! Merci les sans ciels !"
-                        </blockquote>
-                    </div>
-                </section>
-                <div class="button-container">
-                    <button class="dropdown-button">V
-                    </button>
-                </div>
-            </div>
+          </section>
+          <div class="button-container">
+            <button class="dropdown-button">V</button>
+          </div>
         </div>
-        <!----------------- FIN CARDS ACTIVITE 3---------------------------------->
-
-
-        <!----------------- DEBUT MOSAIQUE---------------------------------->
-        <div>
-            <h2 class="titreMosaique">#LuneTourisme</h2>
+        <!----------------- FIN CARDS HOTEL 2---------------------------------->
+        <!---------------------CARDS HOTEL 3----------------------------->
+        <div class="card-container">
+          <div class="image-container">
+            <img src="images/formule1-0.png" class="card-img" />
+          </div>
+          <section class="cardelement-section">
+            <h3 class="name-cardelement">F1 Lune</h3>
+            <div class="dropdown-menu-content">
+              <article class="cardelement-description">
+                <p>
+                  Bienvenue chez F1 Lune, l'hôtel Formule 1 de choix sur la
+                  Lune! Fidèle à l'esprit de la célèbre chaîne d'hôtels
+                  économiques, F1 Lune offre un hébergement pratique et
+                  abordable pour les voyageurs à la recherche d'une expérience
+                  lunaire inoubliable. Nos chambres simples mais confortables
+                  sont équipées de tout ce dont vous avez besoin pour un séjour
+                  agréable, y compris des lits confortables, des douches
+                  rafraîchissantes et un accès Wi-Fi gratuit. Situé au cœur de
+                  notre colonie lunaire, LunarSpeed vous offre un point de
+                  départ idéal pour explorer les merveilles de la Lune. Que vous
+                  soyez un astronaute en mission spatiale ou un touriste en
+                  quête d'aventure, F1 Lune vous offre un hébergement de qualité
+                  à un prix abordable. Rejoignez-nous pour une expérience de
+                  séjour pratique et confortable chez F1 Lune, où le confort ne
+                  fait pas défaut, même à des millions de kilomètres de la
+                  Terre!
+                </p>
+              </article>
+              <blockquote class="cardelement-quote">
+                "Merci à vous pour le service proposé qui change beaucoup des
+                autres hôtels budget nous avons été agréablement surpris du
+                service et de la propreté des chambres. Nous avons très bien
+                dormi ! Endroit calme, propre et sécuritaire !"
+              </blockquote>
+            </div>
+          </section>
+          <div class="button-container">
+            <button class="dropdown-button">V</button>
+          </div>
         </div>
-        <section class="mosaique">
+      </div>
+      <!---------------- FIN CARDS HOTEL 3---------------------------------->
+      <!---------------------CARDS ACTIVITE 1----------------------------->
+      <h2 class="title-category" id="activites">ACTIVITÉS</h2>
 
-            <img class="img1" src="images/mosaique/mosaic3.png"
-                alt="groupe de personnes regardant l'horizon/coucher de soleil sur la Lune">
-            <img class="img2" src="images/mosaique/mosaic4.png" alt="Famille dans une tente sur la Lune">
-            <img class="img3" src="images/mosaique/mosaic2.png"
-                alt="selfie d'un couple sur la Lune avec un astonaute en fond">
-            <img class="img4" src="images/mosaique/mosaic6.png" alt="Vue de la Terre depuis la Lune">
-            <img class="img5" src="images/mosaique/mosaic5.png" alt="familles qui regarde l'horizon sur la Lune">
-        </section>
+      <div class="activity-cards">
+        <div class="card-container">
+          <div class="image-container">
+            <img src="images/attraction.jpg" class="card-img" />
+          </div>
+          <section class="cardelement-section">
+            <h3 class="name-cardelement">Lunaireland</h3>
+            <div class="dropdown-menu-content">
+              <article class="cardelement-description">
+                <p>
+                  Bienvenue au Parc Lunaireland, où vos rêves de découverte
+                  spatiale et d'aventure deviennent réalité! Niché sur la
+                  surface tranquille de la lune, notre parc d'attractions offre
+                  une expérience extraordinaire à tous les visiteurs intrépides.
+                  Explorez nos attractions uniques, depuis les montagnes russes
+                  à gravité zéro jusqu'aux simulations de promenades en rover
+                  lunaire à travers les cratères majestueux. Admirez la vue
+                  imprenable sur la Terre depuis notre tour d'observation
+                  lunaire, ou défiez vos amis dans des jeux de laser tag sous le
+                  clair de lune. Pour les amateurs de science, ne manquez pas
+                  nos expositions interactives sur l'astronomie et l'exploration
+                  spatiale, où vous pourrez en apprendre davantage sur les
+                  mystères fascinants de notre univers. Que vous soyez un
+                  astronaute chevronné ou un amateur d'aventure en herbe, le
+                  Parc Lunaireland offre une expérience inoubliable pour tous
+                  les âges. Rejoignez-nous pour une escapade cosmique et créez
+                  des souvenirs qui dureront toute une vie !
+                </p>
+              </article>
+              <blockquote class="cardelement-quote">
+                "Époustouflant, émerveillement garanti ! Ambiance de Noël avec
+                parade et feux d'artifice au top. Restauration variée (mais un
+                peu chère). Attractions très bien réalisées et variées ! Je
+                recommande à 100%"
+              </blockquote>
+            </div>
+          </section>
+          <div class="button-container">
+            <button class="dropdown-button">V</button>
+          </div>
+        </div>
+        <!----------------- FIN CARDS ACTIVITE 1---------------------------------->
+        <!---------------------CARDS ACTIVITE 2----------------------------->
+        <div class="card-container">
+          <div class="image-container">
+            <img src="images/rover.jpg" class="card-img" />
+          </div>
+          <section class="cardelement-section">
+            <h3 class="name-cardelement">Rover lunaire</h3>
+            <div class="dropdown-menu-content">
+              <article class="cardelement-description">
+                <p>
+                  Découvrez l'excitation de l'exploration lunaire avec notre
+                  incroyable activité de balade en Rover lunaire! Située sur la
+                  surface éclatante de la Lune, cette expérience inoubliable
+                  vous emmène à travers des paysages lunaires à couper le
+                  souffle, où chaque cratère et chaque montagne racontent une
+                  histoire de l'espace. Conduisez votre Rover spécialisé, équipé
+                  pour l'aventure extraterrestre, et admirez les vues
+                  spectaculaires du cosmos environnant. Que vous soyez un
+                  passionné d'astronomie ou un amateur d'aventure, cette
+                  excursion garantit des souvenirs lunaires pour toute une vie.
+                  Préparez-vous à vivre une expérience hors du commun sur notre
+                  balade en Rover lunaire!
+                </p>
+              </article>
+              <blockquote class="cardelement-quote">
+                " Expérience inoubliable. Un merci spécial à notre guide pour
+                son accueil chaleureux et sa gentillesse. Nous avons vécu une
+                expérience incroyable !"
+              </blockquote>
+            </div>
+          </section>
+          <div class="button-container">
+            <button class="dropdown-button">V</button>
+          </div>
+        </div>
+        <!----------------- FIN CARDS ACTIVITE 2---------------------------------->
+        <!---------------------CARDS ACTIVITE 3----------------------------->
+        <div class="card-container">
+          <div class="image-container">
+            <img src="images/hammam.jpg" class="card-img" />
+          </div>
+          <section class="cardelement-section">
+            <h3 class="name-cardelement">Les sans ciels</h3>
+            <div class="dropdown-menu-content">
+              <article class="cardelement-description">
+                <p>
+                  Explorez le summum du bien-être et de la relaxation cosmique
+                  avec notre activité de sources chaudes sur la Lune aux sans
+                  ciels! Nichées au cœur des cratères lunaires, nos sources
+                  chaudes naturelles offrent une expérience de détente comme
+                  nulle part ailleurs dans l'univers. Immergez-vous dans les
+                  eaux thermales revitalisantes, imprégnées des minéraux
+                  lunaires rares pour apaiser votre corps et votre esprit.
+                  Laissez-vous emporter par la tranquillité absolue alors que
+                  vous contemplez le paysage lunaire à couper le souffle depuis
+                  nos installations confortables et sécurisées. Que vous soyez
+                  en quête de guérison physique ou de revitalisation mentale,
+                  nos sources chaudes lunaires vous promettent une évasion
+                  céleste inégalée. Préparez-vous à vous ressourcer dans
+                  l'atmosphère sereine de nos sources chaudes aux sans ciels sur
+                  la Lune!
+                </p>
+              </article>
+              <blockquote class="cardelement-quote">
+                "Superbe lieu niché dans les cratères de la Lune ! L'équipe est
+                très accueillante que ce soit à l'accueil ou lors des soins.
+                L'endroit est très propre. Hâte d'y revenir ! Merci les sans
+                ciels !"
+              </blockquote>
+            </div>
+          </section>
+          <div class="button-container">
+            <button class="dropdown-button">V</button>
+          </div>
+        </div>
+      </div>
+      <!----------------- FIN CARDS ACTIVITE 3---------------------------------->
 
-        <!----------------- FIN MOSAIQUE---------------------------------->
+      <!----------------- DEBUT MOSAIQUE---------------------------------->
+      <div>
+        <h2 class="titreMosaique">#LuneTourisme</h2>
+      </div>
+      <section class="mosaique">
+        <img
+          class="img1"
+          src="images/mosaique/mosaic3.png"
+          alt="groupe de personnes regardant l'horizon/coucher de soleil sur la Lune"
+        />
+        <img
+          class="img2"
+          src="images/mosaique/mosaic4.png"
+          alt="Famille dans une tente sur la Lune"
+        />
+        <img
+          class="img3"
+          src="images/mosaique/mosaic2.png"
+          alt="selfie d'un couple sur la Lune avec un astonaute en fond"
+        />
+        <img
+          class="img4"
+          src="images/mosaique/mosaic1.png"
+          alt="Vue de la Terre depuis la Lune"
+        />
+        <img
+          class="img5"
+          src="images/mosaique/mosaic5.png"
+          alt="familles qui regarde l'horizon sur la Lune"
+        />
+      </section>
 
+      <!----------------- FIN MOSAIQUE---------------------------------->
 
-        <section class="btn-cmnt"> <!--l'integrer dans la section mosaique ?-->
-            <button class="btn">Laisser vos avis</button>
-        </section>
-
+      <section class="btn-cmnt">
+        <!--l'integrer dans la section mosaique ?-->
+        <button class="btn">Laisser vos avis</button>
+      </section>
     </main>
 
     <!----------------- DEBUT Footer---------------------------------->
 
     <footer>
-        <img class="lunefooter" src="images/logo.png" alt="Logo de l'office de tourisme de la lune">
-        <section class="contact">
-            <p>Adresse : 32 rue de lille , 59000 LUNE</p>
-            <p>Téléphone : 090909090909</p>
-            <p>Mail : lune@outlook.com</p>
-            <p>Suivez-nous</p>
-            <a href="https://www.facebook.com/"><img class="logofooter" src="images/facebookLogo.png"></a>
-            <a href="https://www.instagram.com/"><img class="logofooter" src="images/insta.png"></a>
-        </section>
-        <section class="developpeurs">
-            <h3>Fait par</h3>
-            <ul id="idev">
-                <li>Morgan POUILLY</li>
-                <li>Elodie REGNIER</li>
-                <li>Houari BENKADA</li>
-                <li>Audrey BAUDRY</li>
-                <li>Arnauld MONTANDON</li>
-            </ul>
-        </section>
+      <img
+        class="lunefooter"
+        src="images/logo.png"
+        alt="Logo de l'office de tourisme de la lune"
+      />
+      <section class="contact">
+        <p>Adresse : 32 rue de lille , 59000 LUNE</p>
+        <p>Téléphone : 090909090909</p>
+        <p>Mail : lune@outlook.com</p>
+        <p>Suivez-nous</p>
+        <a href="https://www.facebook.com/"
+          ><img class="logofooter" src="images/facebookLogo.png"
+        /></a>
+        <a href="https://www.instagram.com/"
+          ><img class="logofooter" src="images/insta.png"
+        /></a>
+      </section>
+      <section class="developpeurs">
+        <h3>Fait par</h3>
+        <ul id="idev">
+          <li>Morgan POUILLY</li>
+          <li>Elodie REGNIER</li>
+          <li>Houari BENKADA</li>
+          <li>Audrey BAUDRY</li>
+          <li>Arnauld MONTANDON</li>
+        </ul>
+      </section>
     </footer>
     <!------------------ FIN Footer---------------------------------->
 
     <!--POP UP AVIS-->
     <div class="popupBackground">
-        <form method="get" action="" class="formulaire">
-            <p class="fullName">
-                <label for="name">Votre Nom-Prénom</label>
-                <input type="text" id="name" placeholder="ex: Dupuis Jean" size="30" </p>
-            <p class="fullEmail">
-                <label for="email">Votre adresse mail</label>
-                <input type="email" id="email" placeholder="ex: Dupuis.Jean@gmail.com" size="30" </p>
-            <p class="fullComment">
-                <label for="comment">Votre Commentaire</label><br>
-                <textarea name="comment" id="comment" rows="5" cols="40"></textarea>
-                <button class="btnEnvoyer">Envoyer</button>
-            </p>
-
-        </form>
+      <form method="get" action="" class="formulaire">
+        <p class="fullName">
+          <label for="name">Votre Nom-Prénom</label>
+          <input type="text" id="name" placeholder="ex: Dupuis Jean" size="30"
+        </p>
+        <p class="fullEmail">
+          <label for="email">Votre adresse mail</label>
+          <input type="email" id="email" placeholder="ex: Dupuis.Jean@gmail.com"
+          size="30"
+        </p>
+        <p class="fullComment">
+          <label for="comment">Votre Commentaire</label><br />
+          <textarea name="comment" id="comment" rows="5" cols="40"></textarea>
+          <button class="btnEnvoyer">Envoyer</button>
+        </p>
+      </form>
     </div>
-</body>
+  </body>
 
-<script src="caroussel.js">
-</script>
-<script src="popup.js">
-</script>
-<script src="script.js">
-</script>
-
+  <script src="caroussel.js"></script>
+  <script src="popup.js"></script>
+  <script src="script.js"></script>
 </html>

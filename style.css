@@ -5,13 +5,12 @@
 
 body {
   background-image: url(images/galaxy.jpeg);
-
 }
 
 /*---------------------------loader----------------------------------*/
-.loader-con{
+.loader-con {
   position: fixed;
-  background:black;
+  background: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,22 +40,23 @@ body {
   align-items: center;
   box-sizing: border-box;
   border-radius: 50%;
-  
-  border-top: 5px solid #EAFC14 ;
+
+  border-top: 5px solid #eafc14;
   position: fixed;
   animation: load 2s linear infinite;
-  background:-webkit-linear-gradient(-90deg, #bdc3c7, #2c3e80);
+  background: -webkit-linear-gradient(-90deg, #bdc3c7, #2c3e80);
 }
 
-.loader::before,.loader::after {
-  content: '';
+.loader::before,
+.loader::after {
+  content: "";
   width: 200px;
   height: 200px;
   position: absolute;
   left: 0;
   top: 0;
   box-sizing: border-box;
-  border-radius:50%;
+  border-radius: 50%;
 }
 
 .loader::before {
@@ -70,10 +70,10 @@ body {
 }
 
 .loader span {
-  font-family: 'Shrikhand';
+  font-family: "Shrikhand";
   font-style: italic;
   position: absolute;
-  font-size:larger;
+  font-size: larger;
   font-weight: bolder;
   width: 100px;
   height: 100px;
@@ -95,7 +95,6 @@ body {
     transform: rotate(-360deg);
   }
 }
-
 
 /* --------------------------DEBUT DE NAV-------------------------- */
 
@@ -143,7 +142,7 @@ li a {
   z-index: 1000;
   background-color: black;
   top: 0;
-  width: 100%
+  width: 100%;
 }
 
 .navBarFixed {
@@ -151,7 +150,6 @@ li a {
 }
 
 /* --------------------------FIN NAV BAR-------------------------- */
-
 
 /*--------------------------CARDS--------------------------*/
 
@@ -219,7 +217,7 @@ li a {
   border-style: none;
   border-radius: 0.75rem;
   padding: 0.5rem 1rem;
-  background-color: #E1DFE1;
+  background-color: #e1dfe1;
 }
 
 .dropdown-button:hover {
@@ -240,10 +238,6 @@ h2 {
 
 /**--------------------------FIN CARDS--------------------------**/
 
-
-
-
-
 /**MOSAIQUE de PHOTOS en GRID**/
 .titreMosaique {
   text-align: center;
@@ -257,7 +251,6 @@ h2 {
   grid-column-gap: 0.5em;
   grid-row-gap: 0.5em;
   margin-bottom: 1em;
-
 }
 
 .img1 {
@@ -292,7 +285,7 @@ h2 {
   justify-content: center;
   align-items: center;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: bolder;
   color: #fff;
   background-color: #999150;
@@ -310,7 +303,6 @@ h2 {
 }
 
 /** FIN bouton commentaire **/
-
 
 /** DEBUT du Footer **/
 
@@ -398,14 +390,9 @@ footer {
   background-color: rgba(83, 82, 82, 0.9);
 }
 
-
-
 /* DEBUT RESPONSIVE */
 
 @media screen and (min-width: 992px) {
-
-
-
   /* -----------------FORMULAIRE RESPONSIVE ---------------*/
   .formulaire {
     left: 30%;
@@ -432,7 +419,7 @@ footer {
   /** CAROUSEL**/
 
   .photo {
-    width: 1000px;
+    width: 800px;
     height: 400px;
     background-position: center;
     margin: 0;
@@ -440,13 +427,12 @@ footer {
   }
 
   #carrousel {
-    position: relative;
-    width: 1000px;
+    position: sticky;
+    width: 800px;
     height: 400px;
     border: solid 4px #fff;
-    box-shadow: 0 0 14px rgba(0, 0, 0, 0, 0.3);
     overflow: hidden;
-    left: 500px;
+    margin: auto;
   }
 
   .bouton {
@@ -482,8 +468,6 @@ footer {
 
   /** FIN CAROUSEL **/
 
-
-
   /* --------------------------cards-------------------------- */
   .restaurant-cards {
     display: flex;
@@ -502,10 +486,15 @@ footer {
 
   .card-container:hover {
     box-shadow: 0.4em 0.4em black;
-    transition: box-shadow .3s;
+    transition: box-shadow 0.3s;
   }
 
   /* --------------------------fin cards-------------------------- */
+
+  /* --------------------------bouton commentaire-------------------------- */
+  .btn {
+    font-size: 25px;
+  }
 
   /* --------------------------début MOSAIQUE NONE-------------------------- */
   .titreMosaique {
@@ -518,10 +507,8 @@ footer {
 
   /* --------------------------fin MOSAIQUE NONE-------------------------- */
 
-
   /* -----------------------FOOTER ----------------------------------------*/
   .contact {
     margin-left: -55%;
   }
-
 }
