@@ -186,7 +186,6 @@ li a:hover {
   justify-content: center;
   margin: 3rem 1rem;
   border-radius: 1.5rem;
-  height: 100%;
   font-family: jura;
   background-color: #988469;
   border: 0.15rem solid black;
@@ -215,6 +214,9 @@ li a:hover {
 .visible {
   display: block;
 }
+.invisible {
+  display: none;
+}
 
 .cardelement-section {
   display: flex;
@@ -225,6 +227,7 @@ li a:hover {
 
 .cardelement-description {
   font-family: Kaisei HarunoUmi;
+  font-size: 1.5em;
 }
 
 .cardelement-quote {
