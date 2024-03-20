@@ -19,7 +19,7 @@ function myFunction() {
 }
 // fin nav bar fixed
 
-// bouton dropdown
+// retournement image pour texte
 
 const dropdownBtn = document.querySelectorAll(".dropdown-button");
 const dropdownMenu = document.querySelectorAll(".dropdown-menu-content");
@@ -28,8 +28,18 @@ for (let i = 0; i < dropdownBtn.length; i++) {
 		dropdownMenu[i].classList.toggle("visible");
 	})
 }
+const dropdownImg = document.querySelectorAll(".card-img");
+for (let i = 0; i < dropdownBtn.length; i++) {
+	dropdownBtn[i].addEventListener("click", function () {
+		dropdownImg[i].classList.toggle("invisible");
+	})
+}
 
-//fin bouton dropdown
+
+//fin retournement image pour texte
+
+
+
 
 
 
