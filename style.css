@@ -167,16 +167,10 @@ li a:hover {
   margin-top: -70px;
 }
 
-/* --------------------------FIN NAV BAR-------------------------- */
-
-/* --------------------------CAROUSSEL NOT ON MOBILE-------------------------- */
-
-#caroussel,
-#g,
-#d,
 #quote-caroussel {
   display: none;
 }
+/* --------------------------FIN NAV BAR-------------------------- */
 
 /*--------------------------CARDS--------------------------*/
 
@@ -192,7 +186,7 @@ li a:hover {
   border: 0.15rem solid black;
   box-shadow: 0.15rem 0.15 rem black;
   padding: 1rem 0.5rem;
-  width: 100%;
+  width: 30%;
 }
 
 .card-img {
@@ -403,6 +397,7 @@ footer {
   margin: 3rem 1rem;
   border-radius: 1.5rem;
   height: 50%;
+  
   font-family: jura;
   background-color: #988469;
   border: 0.15rem solid black;
@@ -416,6 +411,40 @@ footer {
   left: 0%;
   height: 200%;
   background-color: rgba(83, 82, 82, 0.9);
+}
+.logoFormulaire {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.fullName {
+  display: flex;
+  flex-direction: column;
+}
+
+.fullEmail {
+  display: flex;
+  flex-direction: column;
+}
+
+.allComment {
+  margin-left: 10%;
+}
+
+
+.btnEnvoyer {  
+  margin-left: 30%;
+  width: 5em;
+  margin-top: 5%;
+}
+
+#name {
+  width: 17em;
+}
+
+#email {
+  width: 17em;
 }
 
 /* DEBUT RESPONSIVE */
@@ -441,6 +470,8 @@ footer {
     padding: 1em;
     width: 12%;
   }
+
+  
 
   /* --------------------------fin nav bar-------------------------- */
 
@@ -522,10 +553,6 @@ footer {
   .card-container:hover {
     box-shadow: 0.4em 0.4em black;
     transition: box-shadow 0.3s;
-  }
-
-  .card-container {
-    width: 30%;
   }
 
   /* --------------------------fin cards-------------------------- */
