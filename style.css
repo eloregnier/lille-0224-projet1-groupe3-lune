@@ -167,10 +167,16 @@ li a:hover {
   margin-top: -70px;
 }
 
+/* --------------------------FIN NAV BAR-------------------------- */
+
+/* --------------------------CAROUSSEL NOT ON MOBILE-------------------------- */
+
+#caroussel,
+#g,
+#d,
 #quote-caroussel {
   display: none;
 }
-/* --------------------------FIN NAV BAR-------------------------- */
 
 /*--------------------------CARDS--------------------------*/
 
@@ -186,7 +192,7 @@ li a:hover {
   border: 0.15rem solid black;
   box-shadow: 0.15rem 0.15 rem black;
   padding: 1rem 0.5rem;
-  width: 30%;
+  width: 100%;
 }
 
 .card-img {
@@ -516,6 +522,10 @@ footer {
   .card-container:hover {
     box-shadow: 0.4em 0.4em black;
     transition: box-shadow 0.3s;
+  }
+
+  .card-container {
+    width: 30%;
   }
 
   /* --------------------------fin cards-------------------------- */
