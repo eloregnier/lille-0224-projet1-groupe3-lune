@@ -1,7 +1,7 @@
 console.log("hello carroussel");
 // CARROUSEL START //
 document.body.onload = function () {
-    nbr = 5;
+    nbr = 4;
     p = 0;
     container = document.getElementById("container");
      g = document.getElementById("g");
