@@ -180,13 +180,11 @@ li a:hover {
   justify-content: center;
   margin: 3rem 1rem;
   border-radius: 1.5rem;
-  height: 100%;
   font-family: jura;
   background-color: #988469;
   border: 0.15rem solid black;
   box-shadow: 0.15rem 0.15 rem black;
   padding: 1rem 0.5rem;
-  width: 30%;
 }
 
 .card-img {
@@ -209,6 +207,9 @@ li a:hover {
 .visible {
   display: block;
 }
+.invisible {
+  display: none;
+}
 
 .cardelement-section {
   display: flex;
@@ -219,6 +220,7 @@ li a:hover {
 
 .cardelement-description {
   font-family: Kaisei HarunoUmi;
+  font-size: 1.5em;
 }
 
 .cardelement-quote {
@@ -578,7 +580,7 @@ footer {
     height: 11em;
   }
   .contact {
-  margin-top: 1em;
+    margin-top: 1em;
     margin-left: -40%;
     font-size: 1em;
   }
