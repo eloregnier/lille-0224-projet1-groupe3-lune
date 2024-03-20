@@ -191,7 +191,6 @@ li a:hover {
   border: 0.15rem solid black;
   box-shadow: 0.15rem 0.15 rem black;
   padding: 1rem 0.5rem;
-  width: 100%;
 }
 
 .card-img {
@@ -554,7 +553,7 @@ footer {
     height: 11em;
   }
   .contact {
-  margin-top: 1em;
+    margin-top: 1em;
     margin-left: -40%;
     font-size: 1em;
   }
