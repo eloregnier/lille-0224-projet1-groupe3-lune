@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="slider.css">
+    <script src="slider.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -46,11 +48,11 @@
     </header>
     <main>
       <!---------------------CAROUSSEL DESKTOP-------------------->
-      <div id="carrousel">
-        <div id="container"></div>
-        <img src="images/arrow_right.png" class="bouton" id="d" />
-        <img src="images/arrow_left.png" class="bouton" id="g" />
-      </div>
+      <div id="slider">
+        <img src="/images/mosaique/mosaic1.png" alt="blablabla" id="slide">
+        <div id="precedent"  onclick="ChangeSlide(-1)"><img src="/images/arrow_left.png"></div>
+        <div id="suivant"  onclick="ChangeSlide(1)"><img src="/images/arrow_right.png"></div>
+    </div>
       <div id="quote-caroussel">
         <p>#LuneTourisme : Les plus beaux clichés</p>
       </div>
