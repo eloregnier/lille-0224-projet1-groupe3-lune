@@ -547,10 +547,16 @@ footer {
   /* --------------------------fin MOSAIQUE NONE-------------------------- */
 
   /* -----------------------FOOTER ----------------------------------------*/
+  footer {
+    height: 11em;
+  }
   .contact {
-    margin-left: -55%;
+  margin-top: 1em;
+    margin-left: -40%;
+    font-size: 1em;
   }
   .developpeurs {
+    margin-top: -0.5em;
     font-size: 1em;
   }
 }
