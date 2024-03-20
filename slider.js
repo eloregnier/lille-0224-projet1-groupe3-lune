@@ -1,4 +1,4 @@
-const slide = ["/images/mosaique/mosaic1.png", "/images/mosaique/mosaic2.png", "/images/mosaique/mosaic3.png", "/images/mosaique/mosaic4.png"];
+const slide = ["images/mosaique/mosaic1.png", "images/mosaique/mosaic2.png", "images/mosaique/mosaic3.png", "images/mosaique/mosaic4.png"];
 let numero = 0;
 
 function ChangeSlide(sens) {
