@@ -66,8 +66,8 @@ body {
 }
 
 .loader span {
-  font-family: "Shrikhand";
-  font-style: italic;
+  font-family: jura;
+  font-style: normal;
   position: absolute;
   font-size: larger;
   font-weight: bolder;
@@ -157,7 +157,8 @@ li a:hover {
   margin-top: -70px;
 }
 
-#quote-caroussel {
+#quote-caroussel,
+#slide {
   display: none;
 }
 /* --------------------------FIN NAV BAR-------------------------- */
@@ -209,13 +210,13 @@ li a:hover {
 }
 
 .cardelement-description {
-  font-family: Kaisei HarunoUmi;
-  font-size: 1.5em;
+  font-family: jura;
+  font-size: 1em;
 }
 
 .cardelement-quote {
   margin-top: 0.4em;
-  font-size: 1.2em;
+  font-size: 0.9em;
   font-style: italic;
 }
 
@@ -389,7 +390,7 @@ footer {
   margin: 3rem 1rem;
   border-radius: 1.5rem;
   height: 50%;
-  
+
   font-family: jura;
   background-color: #988469;
   border: 0.15rem solid black;
@@ -424,8 +425,7 @@ footer {
   margin-left: 10%;
 }
 
-
-.btnEnvoyer {  
+.btnEnvoyer {
   margin-left: 30%;
   width: 5em;
   margin-top: 5%;
@@ -462,8 +462,6 @@ footer {
     padding: 1em;
     width: 12%;
   }
-
-  
 
   /* --------------------------fin nav bar-------------------------- */
 
@@ -547,6 +545,17 @@ footer {
     transition: box-shadow 0.3s;
   }
 
+  .card-container {
+    width: 100%;
+  }
+
+  .cardelement-description {
+    font-size: 1.3em;
+  }
+
+  .cardelement-quote {
+    font-size: 1.1em;
+  }
   /* --------------------------fin cards-------------------------- */
 
   /* --------------------------bouton commentaire-------------------------- */
