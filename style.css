@@ -22,11 +22,7 @@ body {
   color: #fff;
   animation: disparaitre 200ms 0.5s forwards;
 }
-/**@keyframes disparaitre {
-  to {
-    transform: scale(0);
-  }
-}**/
+
 @keyframes disparaitre {
   to {
     transform: scale(0);
@@ -41,10 +37,10 @@ body {
   box-sizing: border-box;
   border-radius: 50%;
 
-  border-top: 5px solid #eafc14;
+  border-top: 5px solid #282825;
   position: fixed;
   animation: load 2s linear infinite;
-  background: -webkit-linear-gradient(-90deg, #bdc3c7, #2c3e80);
+  background: -webkit-linear-gradient(-90deg, #343332, #7b7978);
 }
 
 .loader::before,
@@ -65,7 +61,7 @@ body {
 }
 
 .loader::after {
-  border-top: 5px solid #3498db;
+  border-top: 5px solid #515252;
   transform: rotate(240deg);
 }
 
@@ -97,12 +93,6 @@ body {
 }
 
 /* --------------------------DEBUT DE NAV-------------------------- */
-
-/* nav bar
-    background-image: url(images/background-nav.png);
-    background-size: 150%;
-    voir si on ajoute une image en bg*/
-
 nav {
   color: white;
   width: 100%;
