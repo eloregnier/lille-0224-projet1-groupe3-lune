@@ -30,3 +30,15 @@ for (let i = 0; i < dropdownBtn.length; i++) {
   });
 }
 //fin retournement image pour texte
+
+
+// let baliseEmail = document.getElementById("email");
+// let email = baliseEmail.value;
+
+// if (validerNom(nom) && validerEmail(email)) {
+//   let scoreEmail = `${score} / ${i}`;
+//   afficherEmail(nom, email, scoreEmail);
+//   } else {
+//     alert("Erreur");
+//   }
+

@@ -31,5 +31,51 @@ function initAddEventListenerPopup() {
     }
   });
 }
+// function afficherMessageOk() {
+//
+//   messageOk.addEventListener("submit", () => {
+
+// })};
+let form = document.querySelector(".formulaire");
+let messageOk = document.querySelector(".messageOk");
+
+// form.addEventListener("submit", (event) => {
+//   event.preventDefault();
+//   messageOk.classList.remove("messageOk");
+// });
+
+let close = document.querySelector(".close");
+close.addEventListener("click", () => {
+  cacherPopup();
+});
+
+
+// Clic sur bonton envoyé si vide => message erreur sinon=> message + fermeture du popup + effacer les inputs
+let name = document.querySelector("#name");
+let email = document.querySelector("#email");
+let comment = document.querySelector("#comment");
+let messageError = document.querySelector(".messageError");
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  if (email.value === "" || name.value === "" || comment.value === "") {
+    messageError.innerHTML = "<br><hr>Formulaire incomplet";
+  } else {
+    messageError.innerHTML="";
+    messageOk.innerHTML = "<br><hr>Message envoyé";
+    setTimeout(function () {
+      cacherPopup();
+    }, 700);
+    setTimeout(function () {
+      messageOk.innerHTML = "";
+    }, 700);
+  }
+  setTimeout(function () {
+    name.value = "";
+    email.value = "";
+    comment.value = "";
+  }, 700);
+});
 
 initAddEventListenerPopup();
+
