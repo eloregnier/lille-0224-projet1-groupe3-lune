@@ -22,16 +22,11 @@ function myFunction() {
 
 const dropdownBtn = document.querySelectorAll(".dropdown-button");
 const dropdownMenu = document.querySelectorAll(".dropdown-menu-content");
-for (let i = 0; i < dropdownBtn.length; i++) {
-  dropdownBtn[i].addEventListener("click", function () {
-    dropdownMenu[i].classList.toggle("visible");
-  });
-}
 const dropdownImg = document.querySelectorAll(".card-img");
 for (let i = 0; i < dropdownBtn.length; i++) {
   dropdownBtn[i].addEventListener("click", function () {
+    dropdownMenu[i].classList.toggle("visible");
     dropdownImg[i].classList.toggle("invisible");
   });
 }
-
 //fin retournement image pour texte
