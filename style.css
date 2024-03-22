@@ -378,7 +378,7 @@ footer {
 .formulaire {
   position: fixed;
   top: 20%;
-  left: 2%;
+  left: -3%;
   /*modifié dans le media queries*/
   display: flex;
   flex-direction: column;
