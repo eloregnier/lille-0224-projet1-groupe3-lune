@@ -28,25 +28,20 @@ function initAddEventListenerPopup() {
   popupBackground.addEventListener("click", (event) => {
     if (event.target === popupBackground) {
       cacherPopup();
+      messageError.innerHTML="";
     }
   });
 }
-// function afficherMessageOk() {
-//
-//   messageOk.addEventListener("submit", () => {
 
-// })};
 let form = document.querySelector(".formulaire");
 let messageOk = document.querySelector(".messageOk");
 
-// form.addEventListener("submit", (event) => {
-//   event.preventDefault();
-//   messageOk.classList.remove("messageOk");
-// });
-
+let messageError = document.querySelector(".messageError");
 let close = document.querySelector(".close");
 close.addEventListener("click", () => {
+  console.log('pouet')
   cacherPopup();
+messageError.innerHTML="";
 });
 
 
@@ -54,7 +49,6 @@ close.addEventListener("click", () => {
 let name = document.querySelector("#name");
 let email = document.querySelector("#email");
 let comment = document.querySelector("#comment");
-let messageError = document.querySelector(".messageError");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
